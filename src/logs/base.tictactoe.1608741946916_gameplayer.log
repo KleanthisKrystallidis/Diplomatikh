@@ -1,0 +1,28 @@
+1608741983079:timeout: game_start stopped
+1608741983434 : possible error: we got a different move than we submitted (noop\=[])
+1608741983434: ==================================================
+1608741983434:last_moves([mark(1,2),noop])-new_state([control(oplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608741983434:compute_best_move finished.
+1608741983434:best_move(mark(1,1))
+1608741983455 : possible error: we got a different move than we submitted (mark(3, 3)\=mark(1, 1))
+1608741983455: ==================================================
+1608741983455:last_moves([noop,mark(3,3)])-new_state([control(xplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,o)])
+1608741983455:compute_best_move finished.
+1608741983455:best_move(noop)
+1608741983480: ==================================================
+1608741983480:last_moves([mark(3,1),noop])-new_state([control(oplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,b),cell(3,3,o)])
+1608741983480:compute_best_move finished.
+1608741983480:best_move(mark(1,1))
+1608741983495 : possible error: we got a different move than we submitted (mark(2, 2)\=mark(1, 1))
+1608741983496: ==================================================
+1608741983496:last_moves([noop,mark(2,2)])-new_state([control(xplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,o),cell(2,3,b),cell(3,1,x),cell(3,2,b),cell(3,3,o)])
+1608741983496:compute_best_move finished.
+1608741983496:best_move(noop)
+1608741983520: ==================================================
+1608741983520:last_moves([mark(3,2),noop])-new_state([control(oplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,o),cell(2,3,b),cell(3,1,x),cell(3,2,x),cell(3,3,o)])
+1608741983520:compute_best_move finished.
+1608741983520:best_move(mark(1,1))
+1608741983547 : possible error: we got a different move than we submitted (mark(2, 3)\=mark(1, 1))
+1608741983547: ==================================================
+1608741983547:last_moves([noop,mark(2,3)])-new_state([control(xplayer),cell(1,1,b),cell(1,2,x),cell(1,3,b),cell(2,1,b),cell(2,2,o),cell(2,3,o),cell(3,1,x),cell(3,2,x),cell(3,3,o)])
+1608741983547 : error: game_stop(base.tictactoe.1608741946916, [noop, mark(2, 3)], 185.063352108002) failed!

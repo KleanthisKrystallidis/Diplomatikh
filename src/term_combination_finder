@@ -1,0 +1,65 @@
+:- module(term_combination_finder).
+
+:-export(combination_finder/6).
+:-export(list_unique/2).
+:-export(comparison/2).
+
+
+
+:-use_module(prolog_extras).
+:-use_module(listut).
+
+
+ combination_finder(Term,Arrity,Counter,L,M,Arg_List):-
+	term_creator(Term,Arrity,Counter,L,Arg_List),get_variable_list(N),list_unique(N,M).
+ 
+ term_creator(Term,Arrity,Counter,L,Arg_List):-
+	Counter > 0,list_maker(L),
+	(param(Arg_List),param(Arrity),param(Term),param(Counter),param(L),for(I,1,Arrity) do 
+	(copy_term(Term,Term2),nth1(I,Arg_List,Elem),arg(I,Term2,Elem),copy_term(Term2,List_Term),append([Term2],L,O),Counterin is Counter - 1,
+	term_creator(List_Term,Arrity,Counterin,O,Arg_List))).
+
+ term_creator(Term,Arrity,Counter,L,Arg_List):-
+	(param(Arg_List),param(O),param(Arrity),param(Term),param(Counter),param(L),for(I,1,Arrity) do 
+	(copy_term(Term,Term2),nth1(I,Arg_List,Elem),arg(I,Term2,Elem),copy_term(Term,List_Term),append([List_Term],L,O))),list_maker(O).
+
+
+list_maker(L):-
+	get_variable_list(K),append(K,L,P),set_variable_list(P).
+
+:- local variable(variable_list,[]).
+:- mode set_variable_list(++).
+set_variable_list(V) :- setval(variable_list, V).
+get_variable_list(V) :- getval(variable_list, V).
+
+
+list_unique(List, Us) :-
+    list_unique_1(List, [], Us).
+
+list_unique_1([], _, []).
+list_unique_1([X|Xs], So_far, Us) :-
+    list_unique_2(X, Xs, So_far, Us).
+
+list_unique_2(X, Xs, So_far, [X|Us]) :-
+    maplist(diff(X), So_far),
+    list_unique_1(Xs, [X|So_far], Us).
+	
+list_unique_2(X, Xs, So_far, Us) :-
+    list_unique_1(Xs, So_far, Us).
+
+diff(X,Y):-not same_term(X,Y).
+
+same_term(X,Y):-functor(X,NameX,ArrityX),functor(Y,NameY,ArrityY),
+NameX == NameY,ArrityX == ArrityY,
+make_argument_list(X,Arg_ListX),make_argument_list(Y,Arg_ListY),
+(param(Arg_ListX),param(Arg_ListY),for(I,1,ArrityX) do nth1(I,Arg_ListX,ElemX),nth1(I,Arg_ListY,ElemY),comparison(ElemX,ElemY)).
+
+make_argument_list(Feature,Arg_List):-
+(foreacharg(X,Feature), foreach(X,Arg_List) do true).
+
+
+
+comparison(X,Y):-((X == Y) -> true; var(X),var(Y)).
+
+
+

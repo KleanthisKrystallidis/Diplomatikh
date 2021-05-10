@@ -1,0 +1,28 @@
+1609097330746 : possible error: we got a different move than we submitted (noop\=[])
+1609097330746: ==================================================
+1609097330746:last_moves([mark(2,1),noop])-new_state([])
+1609097330747 : error: game_play(base.tictactoe.1609097293685, [mark(2, 1), noop], 20819.344233036, _2145) failed!
+1609097330774 : possible error: we got a different move than we submitted (mark(3, 1)\=[])
+1609097330774: ==================================================
+1609097330774:last_moves([noop,mark(3,1)])-new_state([])
+1609097330774 : error: game_play(base.tictactoe.1609097293685, [noop, mark(3, 1)], 20819.3892328739, _3469) failed!
+1609097330794 : possible error: we got a different move than we submitted (noop\=[])
+1609097330794: ==================================================
+1609097330794:last_moves([mark(2,2),noop])-new_state([])
+1609097330794 : error: game_play(base.tictactoe.1609097293685, [mark(2, 2), noop], 20819.4092330933, _4792) failed!
+1609097330815 : possible error: we got a different move than we submitted (mark(1, 3)\=[])
+1609097330815: ==================================================
+1609097330815:last_moves([noop,mark(1,3)])-new_state([])
+1609097330815 : error: game_play(base.tictactoe.1609097293685, [noop, mark(1, 3)], 20819.4292330742, _6115) failed!
+1609097330835 : possible error: we got a different move than we submitted (noop\=[])
+1609097330835: ==================================================
+1609097330835:last_moves([mark(1,1),noop])-new_state([])
+1609097330835 : error: game_play(base.tictactoe.1609097293685, [mark(1, 1), noop], 20819.4502329826, _7438) failed!
+1609097330853 : possible error: we got a different move than we submitted (mark(3, 2)\=[])
+1609097330853: ==================================================
+1609097330853:last_moves([noop,mark(3,2)])-new_state([])
+1609097330853 : error: game_play(base.tictactoe.1609097293685, [noop, mark(3, 2)], 20819.469233036, _8761) failed!
+1609097330895 : possible error: we got a different move than we submitted (noop\=[])
+1609097330895: ==================================================
+1609097330895:last_moves([mark(3,3),noop])-new_state([])
+1609097330895 : final value: [50, 50], our value: 50

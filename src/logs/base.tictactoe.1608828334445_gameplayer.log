@@ -1,0 +1,35 @@
+1608828334235: ==================================================
+1608828334235:last_moves([])-new_state([cell(a,1,b),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wr),cell(b,2,b),cell(b,4,wp),cell(b,5,bp),cell(b,7,b),cell(b,8,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,b),cell(d,5,bp),cell(d,7,bn),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,wb),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608828334237 : error: game_play(base.tictactoe.1608828334445, [], 84746.093931675, _1716) failed!
+1608828334284 : possible error: we got a different move than we submitted (bushwhacking\=[])
+1608828334285: ==================================================
+1608828334285:last_moves([unabridged(3,2),bushwhacking])-new_state([])
+1608828334285 : error: game_play(base.tictactoe.1608828334445, [unabridged(3, 2), bushwhacking], 84746.1329317093, _2819) failed!
+1608828334319 : possible error: we got a different move than we submitted (unabridged(1, 3)\=[])
+1608828334319: ==================================================
+1608828334319:last_moves([bushwhacking,unabridged(1,3)])-new_state([])
+1608828334320 : error: game_play(base.tictactoe.1608828334445, [bushwhacking, unabridged(1, 3)], 84746.1809315681, _4312) failed!
+1608828334354 : possible error: we got a different move than we submitted (bushwhacking\=[])
+1608828334354: ==================================================
+1608828334354:last_moves([unabridged(2,1),bushwhacking])-new_state([])
+1608828334355 : error: game_play(base.tictactoe.1608828334445, [unabridged(2, 1), bushwhacking], 84746.209931612, _5805) failed!
+1608828334393 : possible error: we got a different move than we submitted (unabridged(1, 2)\=[])
+1608828334393: ==================================================
+1608828334393:last_moves([bushwhacking,unabridged(1,2)])-new_state([])
+1608828334394 : error: game_play(base.tictactoe.1608828334445, [bushwhacking, unabridged(1, 2)], 84746.2539317608, _7298) failed!
+1608828334425 : possible error: we got a different move than we submitted (bushwhacking\=[])
+1608828334425: ==================================================
+1608828334425:last_moves([unabridged(2,2),bushwhacking])-new_state([])
+1608828334425 : error: game_play(base.tictactoe.1608828334445, [unabridged(2, 2), bushwhacking], 84746.2789316177, _8791) failed!
+1608828334471 : possible error: we got a different move than we submitted (unabridged(3, 3)\=[])
+1608828334471: ==================================================
+1608828334471:last_moves([bushwhacking,unabridged(3,3)])-new_state([])
+1608828334471 : error: game_play(base.tictactoe.1608828334445, [bushwhacking, unabridged(3, 3)], 84746.3189315796, _10284) failed!
+1608828334500 : possible error: we got a different move than we submitted (bushwhacking\=[])
+1608828334500: ==================================================
+1608828334500:last_moves([unabridged(3,1),bushwhacking])-new_state([])
+1608828334502 : error: game_play(base.tictactoe.1608828334445, [unabridged(3, 1), bushwhacking], 84746.3619315624, _11777) failed!
+1608828334549 : possible error: we got a different move than we submitted (unabridged(2, 3)\=[])
+1608828334549: ==================================================
+1608828334549:last_moves([bushwhacking,unabridged(2,3)])-new_state([])
+1608828334549 : final value: [50, 50], our value: 50

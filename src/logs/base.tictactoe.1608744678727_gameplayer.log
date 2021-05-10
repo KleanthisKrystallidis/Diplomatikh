@@ -1,0 +1,28 @@
+1608744712133 : possible error: we got a different move than we submitted (noop\=[])
+1608744712133: ==================================================
+1608744712133:last_moves([mark(2,3),noop])-new_state([])
+1608744712133 : error: game_play(base.tictactoe.1608744678727, [mark(2, 3), noop], 1123.99093174934, _4729) failed!
+1608744712149 : possible error: we got a different move than we submitted (mark(1, 2)\=[])
+1608744712149: ==================================================
+1608744712149:last_moves([noop,mark(1,2)])-new_state([])
+1608744712149 : error: game_play(base.tictactoe.1608744678727, [noop, mark(1, 2)], 1124.00993156433, _6053) failed!
+1608744712176 : possible error: we got a different move than we submitted (noop\=[])
+1608744712177: ==================================================
+1608744712177:last_moves([mark(3,1),noop])-new_state([])
+1608744712177 : error: game_play(base.tictactoe.1608744678727, [mark(3, 1), noop], 1124.0389316082, _7376) failed!
+1608744712198 : possible error: we got a different move than we submitted (mark(3, 3)\=[])
+1608744712198: ==================================================
+1608744712198:last_moves([noop,mark(3,3)])-new_state([])
+1608744712198 : error: game_play(base.tictactoe.1608744678727, [noop, mark(3, 3)], 1124.06093168259, _8699) failed!
+1608744712223 : possible error: we got a different move than we submitted (noop\=[])
+1608744712223: ==================================================
+1608744712223:last_moves([mark(1,1),noop])-new_state([])
+1608744712223 : error: game_play(base.tictactoe.1608744678727, [mark(1, 1), noop], 1124.08493161201, _10022) failed!
+1608744712251 : possible error: we got a different move than we submitted (mark(3, 2)\=[])
+1608744712251: ==================================================
+1608744712251:last_moves([noop,mark(3,2)])-new_state([])
+1608744712251 : error: game_play(base.tictactoe.1608744678727, [noop, mark(3, 2)], 1124.11293172836, _11345) failed!
+1608744712281 : possible error: we got a different move than we submitted (noop\=[])
+1608744712281: ==================================================
+1608744712281:last_moves([mark(2,1),noop])-new_state([])
+1608744712281 : final value: [50, 50], our value: 50

@@ -1,0 +1,19 @@
+1608744798334 : possible error: we got a different move than we submitted (noop\=[])
+1608744798335: ==================================================
+1608744798335:last_moves([move(pawn,a,2,a,4),noop])-new_state([canenpassantinfile(a)])
+1608744798335:compute_best_move finished.
+1608744798335:best_move(noop)
+1608744798966 : possible error: we got a different move than we submitted (move(pawn, f, 7, f, 6)\=noop)
+1608744798966: ==================================================
+1608744798967:last_moves([noop,move(pawn,f,7,f,6)])-new_state([])
+1608744798967:compute_best_move finished.
+1608744798967:best_move(noop)
+1608744800939: ==================================================
+1608744800939:last_moves([move(pawn,d,2,d,4),noop])-new_state([canenpassantinfile(d)])
+1608744800939:compute_best_move finished.
+1608744800939:best_move(noop)
+1608744801671 : possible error: we got a different move than we submitted (move(queen, d, 8, d, 7)\=noop)
+1608744801671: ==================================================
+1608744801671:last_moves([noop,move(queen,d,8,d,7)])-new_state([])
+1608744801671:compute_best_move finished.
+1608744801671:best_move(noop)

@@ -1,0 +1,407 @@
+1608832552117: ==================================================
+1608832552118:last_moves([])-new_state([])
+1608832552119 : error: game_play(base.checkers.1608832551027, [], 73.0561447143555, _445) failed!
+1608832552473 : possible error: we got a different move than we submitted (noop\=[])
+1608832552474: ==================================================
+1608832552474:last_moves([move(wp,f,3,g,4),noop])-new_state([cell(f,3,b),cell(g,4,wp)])
+1608832552474 : error: game_play(base.checkers.1608832551027, [move(wp, f, 3, g, 4), noop], 73.4121446609497, _1534) failed!
+1608832552536 : possible error: we got a different move than we submitted (move(bp, a, 6, b, 5)\=[])
+1608832552537: ==================================================
+1608832552537:last_moves([noop,move(bp,a,6,b,5)])-new_state([cell(a,6,b),cell(b,5,bp),cell(f,3,b),cell(g,4,wp)])
+1608832552537 : error: game_play(base.checkers.1608832551027, [noop, move(bp, a, 6, b, 5)], 73.4831445217133, _2941) failed!
+1608832552619 : possible error: we got a different move than we submitted (noop\=[])
+1608832552619: ==================================================
+1608832552619:last_moves([move(wp,d,3,c,4),noop])-new_state([cell(a,6,b),cell(b,5,bp),cell(c,4,wp),cell(d,3,b),cell(f,3,b),cell(g,4,wp)])
+1608832552621 : error: game_play(base.checkers.1608832551027, [move(wp, d, 3, c, 4), noop], 73.5601446628571, _4348) failed!
+1608832552672 : possible error: we got a different move than we submitted (move(bp, e, 6, f, 5)\=[])
+1608832552672: ==================================================
+1608832552672:last_moves([noop,move(bp,e,6,f,5)])-new_state([cell(a,6,b),cell(b,5,bp),cell(c,4,wp),cell(d,3,b),cell(e,6,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832552674 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 6, f, 5)], 73.6201446056366, _5755) failed!
+1608832552725 : possible error: we got a different move than we submitted (noop\=[])
+1608832552725: ==================================================
+1608832552725:last_moves([move(wp,e,2,d,3),noop])-new_state([cell(a,6,b),cell(b,5,bp),cell(c,4,wp),cell(d,3,wp),cell(e,2,b),cell(e,6,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832552728 : error: game_play(base.checkers.1608832551027, [move(wp, e, 2, d, 3), noop], 73.6701445579529, _7162) failed!
+1608832552774 : possible error: we got a different move than we submitted (move(bp, b, 7, a, 6)\=[])
+1608832552774: ==================================================
+1608832552774:last_moves([noop,move(bp,b,7,a,6)])-new_state([cell(a,6,bp),cell(b,5,bp),cell(b,7,b),cell(c,4,wp),cell(d,3,wp),cell(e,2,b),cell(e,6,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832552774 : error: game_play(base.checkers.1608832551027, [noop, move(bp, b, 7, a, 6)], 73.7221446037292, _8569) failed!
+1608832552846 : possible error: we got a different move than we submitted (noop\=[])
+1608832552846: ==================================================
+1608832552846:last_moves([move(wp,c,4,d,5),noop])-new_state([cell(a,6,bp),cell(b,5,bp),cell(b,7,b),cell(c,4,b),cell(d,3,wp),cell(d,5,wp),cell(e,2,b),cell(e,6,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832552846 : error: game_play(base.checkers.1608832551027, [move(wp, c, 4, d, 5), noop], 73.792144536972, _9976) failed!
+1608832552942 : possible error: we got a different move than we submitted (move(bp, c, 8, b, 7)\=[])
+1608832552943: ==================================================
+1608832552943:last_moves([noop,move(bp,c,8,b,7)])-new_state([cell(a,6,bp),cell(b,5,bp),cell(b,7,bp),cell(c,4,b),cell(c,8,b),cell(d,3,wp),cell(d,5,wp),cell(e,2,b),cell(e,6,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832552948 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 8, b, 7)], 73.8831446170807, _11383) failed!
+1608832553046 : possible error: we got a different move than we submitted (noop\=[])
+1608832553046: ==================================================
+1608832553046:last_moves([move(wp,f,1,e,2),noop])-new_state([cell(a,6,bp),cell(b,5,bp),cell(b,7,bp),cell(c,4,b),cell(c,8,b),cell(d,3,wp),cell(d,5,wp),cell(e,2,wp),cell(e,6,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832553047 : error: game_play(base.checkers.1608832551027, [move(wp, f, 1, e, 2), noop], 73.9941446781158, _12790) failed!
+1608832553111 : possible error: we got a different move than we submitted (move(bp, b, 5, c, 4)\=[])
+1608832553111: ==================================================
+1608832553112:last_moves([noop,move(bp,b,5,c,4)])-new_state([cell(a,6,bp),cell(b,5,b),cell(b,7,bp),cell(c,4,bp),cell(c,8,b),cell(d,3,wp),cell(d,5,wp),cell(e,2,wp),cell(e,6,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832553113 : error: game_play(base.checkers.1608832551027, [noop, move(bp, b, 5, c, 4)], 74.0611445903778, _14197) failed!
+1608832553182 : possible error: we got a different move than we submitted (noop\=[])
+1608832553183: ==================================================
+1608832553183:last_moves([move(wp,d,3,b,5),noop])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,8,b),cell(d,3,b),cell(d,5,wp),cell(e,2,wp),cell(e,6,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832553183 : error: game_play(base.checkers.1608832551027, [move(wp, d, 3, b, 5), noop], 74.1261446475983, _15604) failed!
+1608832553259 : possible error: we got a different move than we submitted (move(bp, c, 6, e, 4)\=[])
+1608832553259: ==================================================
+1608832553259:last_moves([noop,move(bp,c,6,e,4)])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,3,b),cell(d,5,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(g,4,wp)])
+1608832553261 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 6, e, 4)], 74.2051446437836, _17011) failed!
+1608832553327 : possible error: we got a different move than we submitted (noop\=[])
+1608832553328: ==================================================
+1608832553328:last_moves([move(wp,e,2,f,3),noop])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,3,b),cell(d,5,b),cell(e,2,b),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(g,4,wp)])
+1608832553329 : error: game_play(base.checkers.1608832551027, [move(wp, e, 2, f, 3), noop], 74.2761445045471, _18418) failed!
+1608832553391 : possible error: we got a different move than we submitted (move(bp, g, 6, h, 5)\=[])
+1608832553391: ==================================================
+1608832553391:last_moves([noop,move(bp,g,6,h,5)])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,3,b),cell(d,5,b),cell(e,2,b),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553391 : error: game_play(base.checkers.1608832551027, [noop, move(bp, g, 6, h, 5)], 74.3411445617676, _19825) failed!
+1608832553520 : possible error: we got a different move than we submitted (noop\=[])
+1608832553521: ==================================================
+1608832553521:last_moves([move(wp,d,1,e,2),noop])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553521 : error: game_play(base.checkers.1608832551027, [move(wp, d, 1, e, 2), noop], 74.4701445102692, _21232) failed!
+1608832553558 : possible error: we got a different move than we submitted (move(bp, d, 7, c, 6)\=[])
+1608832553558: ==================================================
+1608832553558:last_moves([noop,move(bp,d,7,c,6)])-new_state([cell(a,6,bp),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553558 : error: game_play(base.checkers.1608832551027, [noop, move(bp, d, 7, c, 6)], 74.5051445960999, _22639) failed!
+1608832553614 : possible error: we got a different move than we submitted (noop\=[])
+1608832553615: ==================================================
+1608832553615:last_moves([move(wp,b,3,c,4),noop])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,wp),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553617 : error: game_play(base.checkers.1608832551027, [move(wp, b, 3, c, 4), noop], 74.5571446418762, _24046) failed!
+1608832553659 : possible error: we got a different move than we submitted (move(bp, f, 7, e, 6)\=[])
+1608832553660: ==================================================
+1608832553660:last_moves([noop,move(bp,f,7,e,6)])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,wp),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,b),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553660 : error: game_play(base.checkers.1608832551027, [noop, move(bp, f, 7, e, 6)], 74.6071445941925, _25959) failed!
+1608832553711 : possible error: we got a different move than we submitted (noop\=[])
+1608832553711: ==================================================
+1608832553711:last_moves([move(wp,c,4,d,5),noop])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,b),cell(g,4,wp),cell(g,6,b),cell(h,5,bp)])
+1608832553712 : error: game_play(base.checkers.1608832551027, [move(wp, c, 4, d, 5), noop], 74.6591446399689, _27366) failed!
+1608832553758 : possible error: we got a different move than we submitted (move(bp, g, 8, f, 7)\=[])
+1608832553759: ==================================================
+1608832553759:last_moves([noop,move(bp,g,8,f,7)])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,wp),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,5,bp)])
+1608832553759 : error: game_play(base.checkers.1608832551027, [noop, move(bp, g, 8, f, 7)], 74.7021446228027, _28773) failed!
+1608832553788 : possible error: we got a different move than we submitted (noop\=[])
+1608832553788: ==================================================
+1608832553788:last_moves([move(wp,e,2,d,3),noop])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,wp),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,5,bp)])
+1608832553789 : error: game_play(base.checkers.1608832551027, [move(wp, e, 2, d, 3), noop], 74.7361445426941, _30180) failed!
+1608832553814 : possible error: we got a different move than we submitted (move(bp, h, 7, g, 6)\=[])
+1608832553814: ==================================================
+1608832553814:last_moves([noop,move(bp,h,7,g,6)])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,wp),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553814 : error: game_play(base.checkers.1608832551027, [noop, move(bp, h, 7, g, 6)], 74.7631447315216, _31587) failed!
+1608832553845 : possible error: we got a different move than we submitted (noop\=[])
+1608832553845: ==================================================
+1608832553845:last_moves([move(wp,c,2,b,3),noop])-new_state([cell(a,6,bp),cell(b,3,wp),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,wp),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553845 : error: game_play(base.checkers.1608832551027, [move(wp, c, 2, b, 3), noop], 74.7951445579529, _32994) failed!
+1608832553886 : possible error: we got a different move than we submitted (move(bp, e, 4, c, 2)\=[])
+1608832553886: ==================================================
+1608832553886:last_moves([noop,move(bp,e,4,c,2)])-new_state([cell(a,6,bp),cell(b,3,wp),cell(b,5,wp),cell(b,7,bp),cell(c,2,bp),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553886 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 4, c, 2)], 74.8351445198059, _34401) failed!
+1608832553931 : possible error: we got a different move than we submitted (noop\=[])
+1608832553931: ==================================================
+1608832553931:last_moves([move(wp,b,5,d,7),noop])-new_state([cell(a,6,bp),cell(b,3,wp),cell(b,5,b),cell(b,7,bp),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,wp),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553931 : error: game_play(base.checkers.1608832551027, [move(wp, b, 5, d, 7), noop], 74.8791446685791, _35808) failed!
+1608832553963 : possible error: we got a different move than we submitted (move(bp, f, 5, e, 4)\=[])
+1608832553963: ==================================================
+1608832553963:last_moves([noop,move(bp,f,5,e,4)])-new_state([cell(a,6,bp),cell(b,3,wp),cell(b,5,b),cell(b,7,bp),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,wp),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553963 : error: game_play(base.checkers.1608832551027, [noop, move(bp, f, 5, e, 4)], 74.9121446609497, _37215) failed!
+1608832553989 : possible error: we got a different move than we submitted (noop\=[])
+1608832553989: ==================================================
+1608832553989:last_moves([move(wp,b,3,c,4),noop])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,bp),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,wp),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832553989 : error: game_play(base.checkers.1608832551027, [move(wp, b, 3, c, 4), noop], 74.9381446838379, _38622) failed!
+1608832554015 : possible error: we got a different move than we submitted (move(bp, c, 2, d, 1)\=[])
+1608832554015: ==================================================
+1608832554015:last_moves([noop,move(bp,c,2,d,1)])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,wp),cell(d,7,wp),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554015 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 2, d, 1)], 74.9641447067261, _40029) failed!
+1608832554079 : possible error: we got a different move than we submitted (noop\=[])
+1608832554079: ==================================================
+1608832554079:last_moves([move(wp,c,4,b,5),noop])-new_state([cell(a,6,bp),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,wp),cell(d,7,wp),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554079 : error: game_play(base.checkers.1608832551027, [move(wp, c, 4, b, 5), noop], 75.0131447315216, _41436) failed!
+1608832554122 : possible error: we got a different move than we submitted (doublejump(bp, e, 8, c, 6, a, 4)\=[])
+1608832554122: ==================================================
+1608832554123:last_moves([noop,doublejump(bp,e,8,c,6,a,4)])-new_state([cell(a,4,bp),cell(a,6,bp),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554124 : error: game_play(base.checkers.1608832551027, [noop, doublejump(bp, e, 8, c, 6, a, 4)], 75.0721445083618, _42843) failed!
+1608832554196 : possible error: we got a different move than we submitted (noop\=[])
+1608832554196: ==================================================
+1608832554196:last_moves([move(wp,b,1,c,2),noop])-new_state([cell(a,4,bp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554197 : error: game_play(base.checkers.1608832551027, [move(wp, b, 1, c, 2), noop], 75.145144701004, _44380) failed!
+1608832554230 : possible error: we got a different move than we submitted (move(bk, d, 1, e, 2)\=[])
+1608832554231: ==================================================
+1608832554231:last_moves([noop,move(bk,d,1,e,2)])-new_state([cell(a,4,bp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,wp),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554231 : error: game_play(base.checkers.1608832551027, [noop, move(bk, d, 1, e, 2)], 75.1751446723938, _45787) failed!
+1608832554275 : possible error: we got a different move than we submitted (noop\=[])
+1608832554275: ==================================================
+1608832554275:last_moves([move(wp,d,5,c,6),noop])-new_state([cell(a,4,bp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,wp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554275 : error: game_play(base.checkers.1608832551027, [move(wp, d, 5, c, 6), noop], 75.2211446762085, _47194) failed!
+1608832554322 : possible error: we got a different move than we submitted (move(bp, a, 4, b, 3)\=[])
+1608832554322: ==================================================
+1608832554322:last_moves([noop,move(bp,a,4,b,3)])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,wp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554322 : error: game_play(base.checkers.1608832551027, [noop, move(bp, a, 4, b, 3)], 75.2671446800232, _48601) failed!
+1608832554355 : possible error: we got a different move than we submitted (noop\=[])
+1608832554355: ==================================================
+1608832554355:last_moves([move(wp,g,4,f,5),noop])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,wp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554355 : error: game_play(base.checkers.1608832551027, [move(wp, g, 4, f, 5), noop], 75.3021445274353, _50008) failed!
+1608832554395 : possible error: we got a different move than we submitted (move(bk, e, 2, f, 1)\=[])
+1608832554395: ==================================================
+1608832554395:last_moves([noop,move(bk,e,2,f,1)])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,wp),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554395 : error: game_play(base.checkers.1608832551027, [noop, move(bk, e, 2, f, 1)], 75.3431446552277, _51415) failed!
+1608832554439 : possible error: we got a different move than we submitted (noop\=[])
+1608832554439: ==================================================
+1608832554439:last_moves([move(wp,c,6,d,7),noop])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,wp),cell(e,2,b),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554439 : error: game_play(base.checkers.1608832551027, [move(wp, c, 6, d, 7), noop], 75.3841445446014, _52822) failed!
+1608832554480 : possible error: we got a different move than we submitted (move(bp, e, 4, d, 3)\=[])
+1608832554480: ==================================================
+1608832554480:last_moves([noop,move(bp,e,4,d,3)])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wp),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554480 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 4, d, 3)], 75.4231445789337, _54229) failed!
+1608832554522 : possible error: we got a different move than we submitted (noop\=[])
+1608832554522: ==================================================
+1608832554522:last_moves([move(wp,f,3,g,4),noop])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wp),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,wp),cell(f,7,bp),cell(g,4,wp),cell(g,6,bp),cell(g,8,b),cell(h,5,bp),cell(h,7,b)])
+1608832554522 : error: game_play(base.checkers.1608832551027, [move(wp, f, 3, g, 4), noop], 75.4711446762085, _55636) failed!
+1608832554556 : possible error: we got a different move than we submitted (move(bp, h, 5, f, 3)\=[])
+1608832554557: ==================================================
+1608832554557:last_moves([noop,move(bp,h,5,f,3)])-new_state([cell(a,4,b),cell(a,6,bp),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,bp),cell(c,2,wp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wp),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554557 : error: game_play(base.checkers.1608832551027, [noop, move(bp, h, 5, f, 3)], 75.5061445236206, _57043) failed!
+1608832554612 : possible error: we got a different move than we submitted (noop\=[])
+1608832554613: ==================================================
+1608832554613:last_moves([move(wp,c,2,a,4),noop])-new_state([cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wp),cell(e,2,b),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554613 : error: game_play(base.checkers.1608832551027, [move(wp, c, 2, a, 4), noop], 75.5611445903778, _58450) failed!
+1608832554642 : possible error: we got a different move than we submitted (move(bk, f, 1, e, 2)\=[])
+1608832554642: ==================================================
+1608832554642:last_moves([noop,move(bk,f,1,e,2)])-new_state([cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wp),cell(e,2,bk),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554642 : error: game_play(base.checkers.1608832551027, [noop, move(bk, f, 1, e, 2)], 75.5901446342468, _59857) failed!
+1608832554681 : possible error: we got a different move than we submitted (noop\=[])
+1608832554681: ==================================================
+1608832554681:last_moves([move(wp,d,7,c,8),noop])-new_state([cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,wp),cell(f,7,bp),cell(g,4,b),cell(g,6,bp),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554682 : error: game_play(base.checkers.1608832551027, [move(wp, d, 7, c, 8), noop], 75.6301445960999, _61264) failed!
+1608832554708 : possible error: we got a different move than we submitted (move(bp, g, 6, e, 4)\=[])
+1608832554708: ==================================================
+1608832554708:last_moves([noop,move(bp,g,6,e,4)])-new_state([cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,b),cell(f,7,bp),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554708 : error: game_play(base.checkers.1608832551027, [noop, move(bp, g, 6, e, 4)], 75.6581447124481, _62671) failed!
+1608832554744 : possible error: we got a different move than we submitted (noop\=[])
+1608832554745: ==================================================
+1608832554745:last_moves([move(wp,a,2,b,3),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,bp),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,b),cell(f,7,bp),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554745 : error: game_play(base.checkers.1608832551027, [move(wp, a, 2, b, 3), noop], 75.6941447257996, _64078) failed!
+1608832554775 : possible error: we got a different move than we submitted (move(bp, e, 6, f, 5)\=[])
+1608832554775: ==================================================
+1608832554775:last_moves([noop,move(bp,e,6,f,5)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,5,b),cell(h,7,b)])
+1608832554775 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 6, f, 5)], 75.7251446247101, _65485) failed!
+1608832554810 : possible error: we got a different move than we submitted (noop\=[])
+1608832554810: ==================================================
+1608832554810:last_moves([move(wp,h,3,g,4),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554810 : error: game_play(base.checkers.1608832551027, [move(wp, h, 3, g, 4), noop], 75.7601447105408, _66892) failed!
+1608832554843 : possible error: we got a different move than we submitted (move(bp, b, 7, c, 6)\=[])
+1608832554843: ==================================================
+1608832554843:last_moves([noop,move(bp,b,7,c,6)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,bp),cell(c,8,wk),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554843 : error: game_play(base.checkers.1608832551027, [noop, move(bp, b, 7, c, 6)], 75.7931447029114, _68299) failed!
+1608832554872 : possible error: we got a different move than we submitted (noop\=[])
+1608832554872: ==================================================
+1608832554872:last_moves([move(wk,c,8,d,7),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554872 : error: game_play(base.checkers.1608832551027, [move(wk, c, 8, d, 7), noop], 75.8201446533203, _69706) failed!
+1608832554894 : possible error: we got a different move than we submitted (move(bp, c, 6, d, 5)\=[])
+1608832554894: ==================================================
+1608832554894:last_moves([noop,move(bp,c,6,d,5)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,wp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554894 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 6, d, 5)], 75.8441445827484, _71113) failed!
+1608832554923 : possible error: we got a different move than we submitted (noop\=[])
+1608832554924: ==================================================
+1608832554924:last_moves([move(wp,b,3,c,4),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,bk),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554924 : error: game_play(base.checkers.1608832551027, [move(wp, b, 3, c, 4), noop], 75.8701446056366, _72520) failed!
+1608832554949 : possible error: we got a different move than we submitted (move(bk, e, 2, f, 1)\=[])
+1608832554949: ==================================================
+1608832554949:last_moves([noop,move(bk,e,2,f,1)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,b),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,wp),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,b),cell(h,7,b)])
+1608832554950 : error: game_play(base.checkers.1608832551027, [noop, move(bk, e, 2, f, 1)], 75.8981447219849, _73927) failed!
+1608832554998 : possible error: we got a different move than we submitted (noop\=[])
+1608832554998: ==================================================
+1608832554998:last_moves([move(wp,g,4,h,5),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,b),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832554998 : error: game_play(base.checkers.1608832551027, [move(wp, g, 4, h, 5), noop], 75.9461445808411, _75334) failed!
+1608832555025 : possible error: we got a different move than we submitted (move(bp, d, 3, e, 2)\=[])
+1608832555025: ==================================================
+1608832555025:last_moves([noop,move(bp,d,3,e,2)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,bp),cell(d,7,wk),cell(e,2,bp),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,bp),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555025 : error: game_play(base.checkers.1608832551027, [noop, move(bp, d, 3, e, 2)], 75.97314453125, _76741) failed!
+1608832555062 : possible error: we got a different move than we submitted (noop\=[])
+1608832555062: ==================================================
+1608832555062:last_moves([doublejump(wp,c,4,e,6,g,8),noop])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,wk),cell(e,2,bp),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555062 : error: game_play(base.checkers.1608832551027, [doublejump(wp, c, 4, e, 6, g, 8), noop], 76.0111446380615, _78148) failed!
+1608832555110 : possible error: we got a different move than we submitted (move(bp, a, 8, b, 7)\=[])
+1608832555110: ==================================================
+1608832555110:last_moves([noop,move(bp,a,8,b,7)])-new_state([cell(a,2,b),cell(a,4,wp),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,wk),cell(e,2,bp),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555110 : error: game_play(base.checkers.1608832551027, [noop, move(bp, a, 8, b, 7)], 76.058144569397, _79685) failed!
+1608832555143 : possible error: we got a different move than we submitted (noop\=[])
+1608832555143: ==================================================
+1608832555143:last_moves([move(wp,a,4,b,5),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,wk),cell(e,2,bp),cell(e,4,bp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555143 : error: game_play(base.checkers.1608832551027, [move(wp, a, 4, b, 5), noop], 76.0921447277069, _81092) failed!
+1608832555177 : possible error: we got a different move than we submitted (move(bp, e, 4, d, 3)\=[])
+1608832555177: ==================================================
+1608832555177:last_moves([noop,move(bp,e,4,d,3)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,bp),cell(f,5,bp),cell(f,7,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555177 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 4, d, 3)], 76.127144575119, _82499) failed!
+1608832555208 : possible error: we got a different move than we submitted (noop\=[])
+1608832555209: ==================================================
+1608832555209:last_moves([move(wp,g,2,e,4),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,bp),cell(e,4,wp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555209 : error: game_play(base.checkers.1608832551027, [move(wp, g, 2, e, 4), noop], 76.1581447124481, _83906) failed!
+1608832555240 : possible error: we got a different move than we submitted (move(bp, e, 2, d, 1)\=[])
+1608832555240: ==================================================
+1608832555240:last_moves([noop,move(bp,e,2,d,1)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,wp),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555240 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 2, d, 1)], 76.1881446838379, _85313) failed!
+1608832555271 : possible error: we got a different move than we submitted (noop\=[])
+1608832555271: ==================================================
+1608832555271:last_moves([move(wp,e,4,d,5),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,wp),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555271 : error: game_play(base.checkers.1608832551027, [move(wp, e, 4, d, 5), noop], 76.2191445827484, _86720) failed!
+1608832555296 : possible error: we got a different move than we submitted (move(bk, d, 1, c, 2)\=[])
+1608832555296: ==================================================
+1608832555296:last_moves([noop,move(bk,d,1,c,2)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,wp),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555296 : error: game_play(base.checkers.1608832551027, [noop, move(bk, d, 1, c, 2)], 76.2451446056366, _88127) failed!
+1608832555355 : possible error: we got a different move than we submitted (noop\=[])
+1608832555355: ==================================================
+1608832555355:last_moves([move(wp,d,5,e,6),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,bp),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555355 : error: game_play(base.checkers.1608832551027, [move(wp, d, 5, e, 6), noop], 76.3011445999146, _89534) failed!
+1608832555379 : possible error: we got a different move than we submitted (move(bp, b, 7, c, 6)\=[])
+1608832555379: ==================================================
+1608832555379:last_moves([noop,move(bp,b,7,c,6)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555379 : error: game_play(base.checkers.1608832551027, [noop, move(bp, b, 7, c, 6)], 76.3291447162628, _90941) failed!
+1608832555431 : possible error: we got a different move than we submitted (noop\=[])
+1608832555431: ==================================================
+1608832555431:last_moves([move(wk,g,8,h,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,wk)])
+1608832555431 : error: game_play(base.checkers.1608832551027, [move(wk, g, 8, h, 7), noop], 76.377144575119, _92348) failed!
+1608832555457 : possible error: we got a different move than we submitted (move(bk, f, 1, g, 2)\=[])
+1608832555458: ==================================================
+1608832555458:last_moves([noop,move(bk,f,1,g,2)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,bk),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,wk)])
+1608832555458 : error: game_play(base.checkers.1608832551027, [noop, move(bk, f, 1, g, 2)], 76.406144618988, _93755) failed!
+1608832555487 : possible error: we got a different move than we submitted (noop\=[])
+1608832555487: ==================================================
+1608832555487:last_moves([move(wk,d,7,e,8),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,bp),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,wp),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,bk),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,wk)])
+1608832555487 : error: game_play(base.checkers.1608832551027, [move(wk, d, 7, e, 8), noop], 76.4361445903778, _95162) failed!
+1608832555542 : possible error: we got a different move than we submitted (move(bp, a, 6, c, 4)\=[])
+1608832555542: ==================================================
+1608832555542:last_moves([noop,move(bp,a,6,c,4)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,bp),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,bk),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,wk)])
+1608832555542 : error: game_play(base.checkers.1608832551027, [noop, move(bp, a, 6, c, 4)], 76.491144657135, _96569) failed!
+1608832555574 : possible error: we got a different move than we submitted (noop\=[])
+1608832555574: ==================================================
+1608832555574:last_moves([move(wk,h,7,g,6),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,bp),cell(c,6,bp),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555575 : error: game_play(base.checkers.1608832551027, [move(wk, h, 7, g, 6), noop], 76.5231447219849, _97976) failed!
+1608832555609 : possible error: we got a different move than we submitted (move(bp, c, 6, d, 5)\=[])
+1608832555609: ==================================================
+1608832555609:last_moves([noop,move(bp,c,6,d,5)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,bp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,wp),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,b),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555609 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 6, d, 5)], 76.5571446418762, _99383) failed!
+1608832555638 : possible error: we got a different move than we submitted (noop\=[])
+1608832555638: ==================================================
+1608832555638:last_moves([move(wp,e,6,f,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,bp),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555639 : error: game_play(base.checkers.1608832551027, [move(wp, e, 6, f, 7), noop], 76.5861446857452, _100790) failed!
+1608832555663 : possible error: we got a different move than we submitted (move(bp, c, 4, b, 3)\=[])
+1608832555663: ==================================================
+1608832555663:last_moves([noop,move(bp,c,4,b,3)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555663 : error: game_play(base.checkers.1608832551027, [noop, move(bp, c, 4, b, 3)], 76.6121447086334, _102197) failed!
+1608832555690 : possible error: we got a different move than we submitted (noop\=[])
+1608832555690: ==================================================
+1608832555690:last_moves([move(wk,e,8,d,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555691 : error: game_play(base.checkers.1608832551027, [move(wk, e, 8, d, 7), noop], 76.6381447315216, _103604) failed!
+1608832555725 : possible error: we got a different move than we submitted (move(bk, g, 2, f, 1)\=[])
+1608832555725: ==================================================
+1608832555725:last_moves([noop,move(bk,g,2,f,1)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555725 : error: game_play(base.checkers.1608832551027, [noop, move(bk, g, 2, f, 1)], 76.6751446723938, _105011) failed!
+1608832555755 : possible error: we got a different move than we submitted (noop\=[])
+1608832555755: ==================================================
+1608832555755:last_moves([move(wk,d,7,c,6),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,wk),cell(c,8,b),cell(d,1,b),cell(d,3,bp),cell(d,5,bp),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555756 : error: game_play(base.checkers.1608832551027, [move(wk, d, 7, c, 6), noop], 76.701144695282, _106418) failed!
+1608832555781 : possible error: we got a different move than we submitted (move(bp, d, 3, e, 2)\=[])
+1608832555781: ==================================================
+1608832555781:last_moves([noop,move(bp,d,3,e,2)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,wk),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,bp),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555783 : error: game_play(base.checkers.1608832551027, [noop, move(bp, d, 3, e, 2)], 76.7291445732117, _107825) failed!
+1608832555812 : possible error: we got a different move than we submitted (noop\=[])
+1608832555812: ==================================================
+1608832555812:last_moves([move(wk,c,6,e,4),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555812 : error: game_play(base.checkers.1608832551027, [move(wk, c, 6, e, 4), noop], 76.7621445655823, _109232) failed!
+1608832555834 : possible error: we got a different move than we submitted (move(bk, f, 1, g, 2)\=[])
+1608832555834: ==================================================
+1608832555834:last_moves([noop,move(bk,f,1,g,2)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,bk),cell(g,4,b),cell(g,6,wk),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,b)])
+1608832555835 : error: game_play(base.checkers.1608832551027, [noop, move(bk, f, 1, g, 2)], 76.7831447124481, _110639) failed!
+1608832555865 : possible error: we got a different move than we submitted (noop\=[])
+1608832555865: ==================================================
+1608832555865:last_moves([move(wk,g,6,h,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,bk),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,b),cell(h,5,wp),cell(h,7,wk)])
+1608832555865 : error: game_play(base.checkers.1608832551027, [move(wk, g, 6, h, 7), noop], 76.8151445388794, _112046) failed!
+1608832555889 : possible error: we got a different move than we submitted (move(bk, g, 2, h, 3)\=[])
+1608832555890: ==================================================
+1608832555890:last_moves([noop,move(bk,g,2,h,3)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,b),cell(h,3,bk),cell(h,5,wp),cell(h,7,wk)])
+1608832555890 : error: game_play(base.checkers.1608832551027, [noop, move(bk, g, 2, h, 3)], 76.8391447067261, _113453) failed!
+1608832555917 : possible error: we got a different move than we submitted (noop\=[])
+1608832555918: ==================================================
+1608832555918:last_moves([move(wp,h,5,g,6),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,bk),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,b),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wp),cell(g,8,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wk)])
+1608832555918 : error: game_play(base.checkers.1608832551027, [move(wp, h, 5, g, 6), noop], 76.866144657135, _114860) failed!
+1608832555945 : possible error: we got a different move than we submitted (move(bk, c, 2, d, 1)\=[])
+1608832555945: ==================================================
+1608832555945:last_moves([noop,move(bk,c,2,d,1)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wp),cell(g,8,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wk)])
+1608832555945 : error: game_play(base.checkers.1608832551027, [noop, move(bk, c, 2, d, 1)], 76.895144701004, _116267) failed!
+1608832555969 : possible error: we got a different move than we submitted (noop\=[])
+1608832555969: ==================================================
+1608832555969:last_moves([move(wk,h,7,g,8),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,wk),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bp),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wp),cell(g,8,wk),cell(h,3,bk),cell(h,5,b),cell(h,7,b)])
+1608832555971 : error: game_play(base.checkers.1608832551027, [move(wk, h, 7, g, 8), noop], 76.9191446304321, _117674) failed!
+1608832555999 : possible error: we got a different move than we submitted (move(bp, f, 5, d, 3)\=[])
+1608832555999: ==================================================
+1608832555999:last_moves([noop,move(bp,f,5,d,3)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,wp),cell(g,8,wk),cell(h,3,bk),cell(h,5,b),cell(h,7,b)])
+1608832555999 : error: game_play(base.checkers.1608832551027, [noop, move(bp, f, 5, d, 3)], 76.9491446018219, _119081) failed!
+1608832556034 : possible error: we got a different move than we submitted (noop\=[])
+1608832556034: ==================================================
+1608832556034:last_moves([move(wp,g,6,h,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,bp),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556034 : error: game_play(base.checkers.1608832551027, [move(wp, g, 6, h, 7), noop], 76.9831445217133, _120488) failed!
+1608832556058 : possible error: we got a different move than we submitted (move(bp, b, 3, a, 2)\=[])
+1608832556058: ==================================================
+1608832556058:last_moves([noop,move(bp,b,3,a,2)])-new_state([cell(a,2,bp),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,wp),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556058 : error: game_play(base.checkers.1608832551027, [noop, move(bp, b, 3, a, 2)], 77.0041446685791, _121895) failed!
+1608832556085 : possible error: we got a different move than we submitted (noop\=[])
+1608832556085: ==================================================
+1608832556085:last_moves([move(wp,h,1,g,2),noop])-new_state([cell(a,2,bp),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,b),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,bp),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,wp),cell(g,2,wp),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556085 : error: game_play(base.checkers.1608832551027, [move(wp, h, 1, g, 2), noop], 77.0351445674896, _123302) failed!
+1608832556114 : possible error: we got a different move than we submitted (move(bp, d, 3, c, 2)\=[])
+1608832556114: ==================================================
+1608832556114:last_moves([noop,move(bp,d,3,c,2)])-new_state([cell(a,2,bp),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,wp),cell(g,2,wp),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556115 : error: game_play(base.checkers.1608832551027, [noop, move(bp, d, 3, c, 2)], 77.0621445178986, _124709) failed!
+1608832556146 : possible error: we got a different move than we submitted (noop\=[])
+1608832556146: ==================================================
+1608832556146:last_moves([move(wp,f,7,e,8),noop])-new_state([cell(a,2,bp),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,b),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,b),cell(g,2,wp),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556147 : error: game_play(base.checkers.1608832551027, [move(wp, f, 7, e, 8), noop], 77.0951445102692, _126116) failed!
+1608832556173 : possible error: we got a different move than we submitted (move(bp, a, 2, b, 1)\=[])
+1608832556173: ==================================================
+1608832556173:last_moves([noop,move(bp,a,2,b,1)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,7,b),cell(g,2,wp),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556173 : error: game_play(base.checkers.1608832551027, [noop, move(bp, a, 2, b, 1)], 77.1211445331573, _127523) failed!
+1608832556210 : possible error: we got a different move than we submitted (noop\=[])
+1608832556211: ==================================================
+1608832556211:last_moves([move(wp,g,2,f,3),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bp),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556211 : error: game_play(base.checkers.1608832551027, [move(wp, g, 2, f, 3), noop], 77.1591446399689, _128930) failed!
+1608832556236 : possible error: we got a different move than we submitted (move(bp, e, 2, f, 1)\=[])
+1608832556236: ==================================================
+1608832556236:last_moves([noop,move(bp,e,2,f,1)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,wk),cell(f,1,bk),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556236 : error: game_play(base.checkers.1608832551027, [noop, move(bp, e, 2, f, 1)], 77.1861445903778, _130337) failed!
+1608832556259 : possible error: we got a different move than we submitted (noop\=[])
+1608832556261: ==================================================
+1608832556261:last_moves([move(wk,e,8,d,7),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556263 : error: game_play(base.checkers.1608832551027, [move(wk, e, 8, d, 7), noop], 77.2091445922852, _131744) failed!
+1608832556290 : possible error: we got a different move than we submitted (move(bk, h, 3, g, 4)\=[])
+1608832556290: ==================================================
+1608832556290:last_moves([noop,move(bk,h,3,g,4)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,wk),cell(e,2,b),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,bk),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556290 : error: game_play(base.checkers.1608832551027, [noop, move(bk, h, 3, g, 4)], 77.2401447296143, _133151) failed!
+1608832556314 : possible error: we got a different move than we submitted (noop\=[])
+1608832556314: ==================================================
+1608832556314:last_moves([move(wk,d,7,e,6),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,b),cell(e,4,b),cell(e,6,wk),cell(e,8,b),cell(f,1,bk),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,bk),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556315 : error: game_play(base.checkers.1608832551027, [move(wk, d, 7, e, 6), noop], 77.2631447315216, _134558) failed!
+1608832556336 : possible error: we got a different move than we submitted (move(bk, f, 1, e, 2)\=[])
+1608832556336: ==================================================
+1608832556336:last_moves([noop,move(bk,f,1,e,2)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,wk),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,bk),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556338 : error: game_play(base.checkers.1608832551027, [noop, move(bk, f, 1, e, 2)], 77.2851445674896, _135965) failed!
+1608832556369 : possible error: we got a different move than we submitted (noop\=[])
+1608832556369: ==================================================
+1608832556369:last_moves([move(wk,e,6,f,5),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,wk),cell(f,7,b),cell(g,2,b),cell(g,4,bk),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556370 : error: game_play(base.checkers.1608832551027, [move(wk, e, 6, f, 5), noop], 77.3191447257996, _137372) failed!
+1608832556394 : possible error: we got a different move than we submitted (move(bk, g, 4, h, 3)\=[])
+1608832556394: ==================================================
+1608832556394:last_moves([noop,move(bk,g,4,h,3)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,wk),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556394 : error: game_play(base.checkers.1608832551027, [noop, move(bk, g, 4, h, 3)], 77.3431446552277, _138779) failed!
+1608832556427 : possible error: we got a different move than we submitted (noop\=[])
+1608832556427: ==================================================
+1608832556427:last_moves([move(wk,f,5,g,4),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,b),cell(f,7,b),cell(g,2,b),cell(g,4,wk),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,bk),cell(h,5,b),cell(h,7,wp)])
+1608832556428 : error: game_play(base.checkers.1608832551027, [move(wk, f, 5, g, 4), noop], 77.3751447200775, _140186) failed!
+1608832556459 : possible error: we got a different move than we submitted (move(bk, h, 3, f, 5)\=[])
+1608832556459: ==================================================
+1608832556459:last_moves([noop,move(bk,h,3,f,5)])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,wp),cell(f,5,bk),cell(f,7,b),cell(g,2,b),cell(g,4,b),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556459 : error: game_play(base.checkers.1608832551027, [noop, move(bk, h, 3, f, 5)], 77.4091446399689, _141593) failed!
+1608832556492 : possible error: we got a different move than we submitted (noop\=[])
+1608832556492: ==================================================
+1608832556492:last_moves([move(wp,f,3,g,4),noop])-new_state([cell(a,2,b),cell(a,4,b),cell(a,6,b),cell(a,8,b),cell(b,1,bk),cell(b,3,b),cell(b,5,b),cell(b,7,b),cell(c,2,bp),cell(c,4,b),cell(c,6,b),cell(c,8,b),cell(d,1,bk),cell(d,3,b),cell(d,5,b),cell(d,7,b),cell(e,2,bk),cell(e,4,b),cell(e,6,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,bk),cell(f,7,b),cell(g,2,b),cell(g,4,wp),cell(g,6,b),cell(g,8,wk),cell(h,1,b),cell(h,3,b),cell(h,5,b),cell(h,7,wp)])
+1608832556492 : error: game_stop(base.checkers.1608832551027, [move(wp, f, 3, g, 4), noop], 77.4401445388794) failed!

@@ -1,0 +1,40 @@
+1608922722433 : error: game_start(base.tictactoe.1608922710126, oplayer, [d_role(xplayer), d_role(oplayer), d_index(1), d_index(2), d_index(3), d_base(cell(_573, _582, b)) :- (d_index(_573), d_index(_582)), d_base(cell(_573, _582, x)) :- (d_index(_573), d_index(_582)), d_base(cell(_573, _582, o)) :- (d_index(_573), d_index(_582)), d_base(control(_651)) :- d_role(_651), d_input(_651, mark(_573, _582)) :- (d_index(_573), d_index(_582), d_role(_651)), d_input(_651, noop) :- d_role(_651), d_init(cell(1, 1, b)), d_init(cell(1, 2, b)), d_init(cell(1, 3, b)), d_init(cell(2, 1, b)), d_init(cell(2, 2, b)), d_init(cell(...)), d_init(...), ...], 30, 15, 171.477767467499) failed!
+1608922722770: ==================================================
+1608922722770:last_moves([])-new_state([])
+1608922722771 : error: game_play(base.tictactoe.1608922710126, [], 184.776767492294, _2123) failed!
+1608922722823 : possible error: we got a different move than we submitted (noop\=[])
+1608922722823: ==================================================
+1608922722823:last_moves([mark(1,1),noop])-new_state([])
+1608922722823 : error: game_play(base.tictactoe.1608922710126, [mark(1, 1), noop], 184.82576751709, _3225) failed!
+1608922722847 : possible error: we got a different move than we submitted (mark(1, 2)\=[])
+1608922722847: ==================================================
+1608922722847:last_moves([noop,mark(1,2)])-new_state([])
+1608922722847 : error: game_play(base.tictactoe.1608922710126, [noop, mark(1, 2)], 184.85576748848, _4548) failed!
+1608922722869 : possible error: we got a different move than we submitted (noop\=[])
+1608922722869: ==================================================
+1608922722869:last_moves([mark(2,2),noop])-new_state([])
+1608922722869 : error: game_play(base.tictactoe.1608922710126, [mark(2, 2), noop], 184.878767490387, _5871) failed!
+1608922722894 : possible error: we got a different move than we submitted (mark(2, 1)\=[])
+1608922722894: ==================================================
+1608922722894:last_moves([noop,mark(2,1)])-new_state([])
+1608922722894 : error: game_play(base.tictactoe.1608922710126, [noop, mark(2, 1)], 184.906767606735, _7194) failed!
+1608922722931 : possible error: we got a different move than we submitted (noop\=[])
+1608922722931: ==================================================
+1608922722931:last_moves([mark(3,2),noop])-new_state([])
+1608922722931 : error: game_play(base.tictactoe.1608922710126, [mark(3, 2), noop], 184.941767454147, _8517) failed!
+1608922722964 : possible error: we got a different move than we submitted (mark(3, 3)\=[])
+1608922722964: ==================================================
+1608922722964:last_moves([noop,mark(3,3)])-new_state([])
+1608922722964 : error: game_play(base.tictactoe.1608922710126, [noop, mark(3, 3)], 184.975767612457, _9840) failed!
+1608922722996 : possible error: we got a different move than we submitted (noop\=[])
+1608922722996: ==================================================
+1608922722996:last_moves([mark(3,1),noop])-new_state([])
+1608922722996 : error: game_play(base.tictactoe.1608922710126, [mark(3, 1), noop], 185.006767511368, _11163) failed!
+1608922723015 : possible error: we got a different move than we submitted (mark(1, 3)\=[])
+1608922723015: ==================================================
+1608922723015:last_moves([noop,mark(1,3)])-new_state([])
+1608922723015 : error: game_play(base.tictactoe.1608922710126, [noop, mark(1, 3)], 185.026767492294, _12486) failed!
+1608922723042 : possible error: we got a different move than we submitted (noop\=[])
+1608922723042: ==================================================
+1608922723042:last_moves([mark(2,3),noop])-new_state([])
+1608922723042 : final value: [50, 50], our value: 50

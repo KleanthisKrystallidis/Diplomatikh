@@ -1,0 +1,41 @@
+1608555136072 : our role: discontents, initial state: [frustrates(partialed), potentially(1, 1, durability), potentially(1, 2, durability), potentially(1, 3, durability), potentially(2, 1, durability), potentially(2, 2, durability), potentially(2, 3, durability), potentially(3, 1, durability), potentially(3, 2, durability), potentially(3, 3, durability)]
+1608555136072:game_start_timed_part finished.
+1608555136737: ==================================================
+1608555136737:last_moves([])-new_state([frustrates(partialed),potentially(1,1,durability),potentially(1,2,durability),potentially(1,3,durability),potentially(2,1,durability),potentially(2,2,durability),potentially(2,3,durability),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555136738:compute_best_move finished.
+1608555136738:best_move(groundball)
+1608555137343: ==================================================
+1608555137343:last_moves([collectivization(2,3),groundball])-new_state([frustrates(discontents),potentially(1,1,durability),potentially(1,2,durability),potentially(1,3,durability),potentially(2,1,durability),potentially(2,2,durability),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555137343:compute_best_move finished.
+1608555137343:best_move(collectivization(1,1))
+1608555137977: ==================================================
+1608555137977:last_moves([groundball,collectivization(1,1)])-new_state([frustrates(partialed),potentially(1,1,showdowns),potentially(1,2,durability),potentially(1,3,durability),potentially(2,1,durability),potentially(2,2,durability),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555137977:compute_best_move finished.
+1608555137977:best_move(groundball)
+1608555138549: ==================================================
+1608555138549:last_moves([collectivization(1,2),groundball])-new_state([frustrates(discontents),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,durability),potentially(2,1,durability),potentially(2,2,durability),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555138549:compute_best_move finished.
+1608555138549:best_move(collectivization(1,3))
+1608555139120: ==================================================
+1608555139120:last_moves([groundball,collectivization(1,3)])-new_state([frustrates(partialed),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,durability),potentially(2,2,durability),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555139120:compute_best_move finished.
+1608555139120:best_move(groundball)
+1608555139695: ==================================================
+1608555139695:last_moves([collectivization(2,2),groundball])-new_state([frustrates(discontents),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,durability),potentially(2,2,strictest),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555139695:compute_best_move finished.
+1608555139697:best_move(collectivization(2,1))
+1608555140361: ==================================================
+1608555140361:last_moves([groundball,collectivization(2,1)])-new_state([frustrates(partialed),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,showdowns),potentially(2,2,strictest),potentially(2,3,strictest),potentially(3,1,durability),potentially(3,2,durability),potentially(3,3,durability)])
+1608555140362:compute_best_move finished.
+1608555140362:best_move(groundball)
+1608555141116: ==================================================
+1608555141116:last_moves([collectivization(3,1),groundball])-new_state([frustrates(discontents),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,showdowns),potentially(2,2,strictest),potentially(2,3,strictest),potentially(3,1,strictest),potentially(3,2,durability),potentially(3,3,durability)])
+1608555141116:compute_best_move finished.
+1608555141116:best_move(collectivization(3,2))
+1608555141740: ==================================================
+1608555141740:last_moves([groundball,collectivization(3,2)])-new_state([frustrates(partialed),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,showdowns),potentially(2,2,strictest),potentially(2,3,strictest),potentially(3,1,strictest),potentially(3,2,showdowns),potentially(3,3,durability)])
+1608555141740:compute_best_move finished.
+1608555141740:best_move(groundball)
+1608555142137: ==================================================
+1608555142137:last_moves([collectivization(3,3),groundball])-new_state([frustrates(discontents),potentially(1,1,showdowns),potentially(1,2,strictest),potentially(1,3,showdowns),potentially(2,1,showdowns),potentially(2,2,strictest),potentially(2,3,strictest),potentially(3,1,strictest),potentially(3,2,showdowns),potentially(3,3,strictest)])
+1608555142137 : final value: [50, 50], our value: 50

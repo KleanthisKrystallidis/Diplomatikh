@@ -1,0 +1,37 @@
+1608555339412 : our role: oplayer, initial state: [control(xplayer), cell(1, 1, b), cell(1, 2, b), cell(1, 3, b), cell(2, 1, b), cell(2, 2, b), cell(2, 3, b), cell(3, 1, b), cell(3, 2, b), cell(3, 3, b)]
+1608555339412:game_start_timed_part finished.
+1608555340079: ==================================================
+1608555340079:last_moves([])-new_state([control(xplayer),cell(1,1,b),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608555340079:compute_best_move finished.
+1608555340080:best_move(noop)
+1608555340704: ==================================================
+1608555340704:last_moves([mark(1,1),noop])-new_state([control(oplayer),cell(1,1,x),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608555340704:compute_best_move finished.
+1608555340704:best_move(mark(1,2))
+1608555341315: ==================================================
+1608555341315:last_moves([noop,mark(1,2)])-new_state([control(xplayer),cell(1,1,x),cell(1,2,o),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608555341315:compute_best_move finished.
+1608555341315:best_move(noop)
+1608555341930: ==================================================
+1608555341930:last_moves([mark(1,3),noop])-new_state([control(oplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608555341930:compute_best_move finished.
+1608555341930:best_move(mark(2,1))
+1608555342507: ==================================================
+1608555342507:last_moves([noop,mark(2,1)])-new_state([control(xplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,o),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1608555342507:compute_best_move finished.
+1608555342507:best_move(noop)
+1608555343090: ==================================================
+1608555343090:last_moves([mark(3,1),noop])-new_state([control(oplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,o),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,b),cell(3,3,b)])
+1608555343090:compute_best_move finished.
+1608555343091:best_move(mark(2,2))
+1608555343641: ==================================================
+1608555343641:last_moves([noop,mark(2,2)])-new_state([control(xplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,o),cell(2,2,o),cell(2,3,b),cell(3,1,x),cell(3,2,b),cell(3,3,b)])
+1608555343641:compute_best_move finished.
+1608555343641:best_move(noop)
+1608555344257: ==================================================
+1608555344257:last_moves([mark(2,3),noop])-new_state([control(oplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,o),cell(2,2,o),cell(2,3,x),cell(3,1,x),cell(3,2,b),cell(3,3,b)])
+1608555344257:compute_best_move finished.
+1608555344258:best_move(mark(3,2))
+1608555344893: ==================================================
+1608555344893:last_moves([noop,mark(3,2)])-new_state([control(xplayer),cell(1,1,x),cell(1,2,o),cell(1,3,x),cell(2,1,o),cell(2,2,o),cell(2,3,x),cell(3,1,x),cell(3,2,o),cell(3,3,b)])
+1608555344893 : final value: [0, 100], our value: 100

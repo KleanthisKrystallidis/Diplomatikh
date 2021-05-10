@@ -1,0 +1,27 @@
+1609008667583: ==================================================
+1609008667584:last_moves([])-new_state([control(xplayer),cell(1,1,b),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
+1609008667585:compute_best_move finished.
+1609008667585:best_move(noop)
+1609008667610: ==================================================
+1609008667610:last_moves([mark(3,2),noop])-new_state([control(oplayer),cell(1,1,b),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,x),cell(3,3,b)])
+1609008667610:compute_best_move finished.
+1609008667610:best_move(mark(1,1))
+1609008667636: ==================================================
+1609008667636:last_moves([noop,mark(1,1)])-new_state([control(xplayer),cell(1,1,o),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,x),cell(3,3,b)])
+1609008667636:compute_best_move finished.
+1609008667636:best_move(noop)
+1609008667655: ==================================================
+1609008667655:last_moves([mark(3,1),noop])-new_state([control(oplayer),cell(1,1,o),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,x),cell(3,3,b)])
+1609008667655:compute_best_move finished.
+1609008667655:best_move(mark(1,2))
+1609008667678: ==================================================
+1609008667678:last_moves([noop,mark(1,2)])-new_state([control(xplayer),cell(1,1,o),cell(1,2,o),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,x),cell(3,3,b)])
+1609008667678:compute_best_move finished.
+1609008667678:best_move(noop)
+1609008667700: ==================================================
+1609008667700:last_moves([mark(2,1),noop])-new_state([control(oplayer),cell(1,1,o),cell(1,2,o),cell(1,3,b),cell(2,1,x),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,x),cell(3,3,b)])
+1609008667700:compute_best_move finished.
+1609008667700:best_move(mark(1,3))
+1609008667721: ==================================================
+1609008667721:last_moves([noop,mark(1,3)])-new_state([control(xplayer),cell(1,1,o),cell(1,2,o),cell(1,3,o),cell(2,1,x),cell(2,2,b),cell(2,3,b),cell(3,1,x),cell(3,2,x),cell(3,3,b)])
+1609008667721 : final value: [0, 100], our value: 100

@@ -1,0 +1,13 @@
+:- module(prolog_extras).
+:- export setup_call_cleanup / 3.
+:- tool(setup_call_cleanup / 3, setup_call_cleanup_ / 4).
+:- export predicate_property / 2.
+:- tool(predicate_property / 2, predicate_property_ / 3).
+:- export dif / 2.
+:- export freeze / 2.
+:- tool(freeze / 2, freeze_ / 3).
+:- comment(categories, ["Compatibility"]).
+:- comment(summary, 'Some predicates commonly available in Prolog systems').
+:- comment(author, 'Joachim Schimpf').
+:- comment(copyright, 'This file is in the public domain').
+:- comment(date, '$Date: 2017/09/03 13:23:23 $').

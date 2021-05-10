@@ -1,0 +1,4 @@
+1609096257905 : possible error: we got a different move than we submitted (noop\=[])
+1609096257905: ==================================================
+1609096257905:last_moves([mark(3,1),noop])-new_state([])
+1609096257905 : final value: [50, 50], our value: 50

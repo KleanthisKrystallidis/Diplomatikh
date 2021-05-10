@@ -1,0 +1,25 @@
+1608557245985 : our role: differentiable, initial state: [multinationals(regenerative), hyperglycemia(1, 1, apologetics), hyperglycemia(1, 2, apologetics), hyperglycemia(1, 3, apologetics), hyperglycemia(2, 1, apologetics), hyperglycemia(2, 2, apologetics), hyperglycemia(2, 3, apologetics), hyperglycemia(3, 1, apologetics), hyperglycemia(3, 2, apologetics), hyperglycemia(3, 3, apologetics)]
+1608557245985:game_start_timed_part finished.
+1608557246663: ==================================================
+1608557246663:last_moves([])-new_state([multinationals(regenerative),hyperglycemia(1,1,apologetics),hyperglycemia(1,2,apologetics),hyperglycemia(1,3,apologetics),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,apologetics),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,apologetics),hyperglycemia(3,3,apologetics)])
+1608557246663:compute_best_move finished.
+1608557246663:best_move(isolating)
+1608557247422: ==================================================
+1608557247422:last_moves([confronted(1,2),isolating])-new_state([multinationals(differentiable),hyperglycemia(1,1,apologetics),hyperglycemia(1,2,deformation),hyperglycemia(1,3,apologetics),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,apologetics),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,apologetics),hyperglycemia(3,3,apologetics)])
+1608557247422:compute_best_move finished.
+1608557247422:best_move(confronted(1,1))
+1608557248063: ==================================================
+1608557248063:last_moves([isolating,confronted(1,1)])-new_state([multinationals(regenerative),hyperglycemia(1,1,incudostapedial),hyperglycemia(1,2,deformation),hyperglycemia(1,3,apologetics),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,apologetics),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,apologetics),hyperglycemia(3,3,apologetics)])
+1608557248063:compute_best_move finished.
+1608557248063:best_move(isolating)
+1608557248663: ==================================================
+1608557248663:last_moves([confronted(2,2),isolating])-new_state([multinationals(differentiable),hyperglycemia(1,1,incudostapedial),hyperglycemia(1,2,deformation),hyperglycemia(1,3,apologetics),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,deformation),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,apologetics),hyperglycemia(3,3,apologetics)])
+1608557248663:compute_best_move finished.
+1608557248663:best_move(confronted(1,3))
+1608557249226: ==================================================
+1608557249226:last_moves([isolating,confronted(1,3)])-new_state([multinationals(regenerative),hyperglycemia(1,1,incudostapedial),hyperglycemia(1,2,deformation),hyperglycemia(1,3,incudostapedial),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,deformation),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,apologetics),hyperglycemia(3,3,apologetics)])
+1608557249226:compute_best_move finished.
+1608557249226:best_move(isolating)
+1608557249903: ==================================================
+1608557249903:last_moves([confronted(3,2),isolating])-new_state([multinationals(differentiable),hyperglycemia(1,1,incudostapedial),hyperglycemia(1,2,deformation),hyperglycemia(1,3,incudostapedial),hyperglycemia(2,1,apologetics),hyperglycemia(2,2,deformation),hyperglycemia(2,3,apologetics),hyperglycemia(3,1,apologetics),hyperglycemia(3,2,deformation),hyperglycemia(3,3,apologetics)])
+1608557249903 : final value: [100, 0], our value: 0

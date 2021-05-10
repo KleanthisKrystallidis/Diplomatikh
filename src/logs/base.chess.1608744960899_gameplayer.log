@@ -1,0 +1,227 @@
+1608744961145: ==================================================
+1608744961146:last_moves([])-new_state([])
+1608744961148 : error: game_play(base.chess.1608744960899, [], 1373.00493168831, _951) failed!
+1608744961589 : possible error: we got a different move than we submitted (noop\=[])
+1608744961589: ==================================================
+1608744961589:last_moves([move(wn,g,1,h,3),noop])-new_state([cell(g,1,b),cell(h,3,wn)])
+1608744961590 : error: game_play(base.chess.1608744960899, [move(wn, g, 1, h, 3), noop], 1373.44793176651, _2003) failed!
+1608744961822 : possible error: we got a different move than we submitted (move(bp, e, 7, e, 5)\=[])
+1608744961823: ==================================================
+1608744961823:last_moves([noop,move(bp,e,7,e,5)])-new_state([pawn_moved_two(bp,e),cell(e,5,bp),cell(e,7,b),cell(g,1,b),cell(h,3,wn)])
+1608744961825 : error: game_play(base.chess.1608744960899, [noop, move(bp, e, 7, e, 5)], 1373.67693161964, _3372) failed!
+1608744962081 : possible error: we got a different move than we submitted (noop\=[])
+1608744962081: ==================================================
+1608744962081:last_moves([move(wn,h,3,g,1),noop])-new_state([cell(e,5,bp),cell(e,7,b),cell(g,1,wn),cell(h,3,b)])
+1608744962082 : error: game_play(base.chess.1608744960899, [move(wn, h, 3, g, 1), noop], 1373.94093155861, _4741) failed!
+1608744962368 : possible error: we got a different move than we submitted (move(bb, f, 8, e, 7)\=[])
+1608744962368: ==================================================
+1608744962368:last_moves([noop,move(bb,f,8,e,7)])-new_state([cell(e,5,bp),cell(e,7,bb),cell(f,8,b),cell(g,1,wn),cell(h,3,b)])
+1608744962370 : error: game_play(base.chess.1608744960899, [noop, move(bb, f, 8, e, 7)], 1374.22993159294, _6110) failed!
+1608744962604 : possible error: we got a different move than we submitted (noop\=[])
+1608744962605: ==================================================
+1608744962605:last_moves([move(wn,g,1,f,3),noop])-new_state([cell(e,5,bp),cell(e,7,bb),cell(f,3,wn),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744962605 : error: game_play(base.chess.1608744960899, [move(wn, g, 1, f, 3), noop], 1374.46593165398, _7479) failed!
+1608744962823 : possible error: we got a different move than we submitted (move(bb, e, 7, b, 4)\=[])
+1608744962823: ==================================================
+1608744962823:last_moves([noop,move(bb,e,7,b,4)])-new_state([cell(b,4,bb),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744962823 : error: game_play(base.chess.1608744960899, [noop, move(bb, e, 7, b, 4)], 1374.68493175507, _8848) failed!
+1608744963049 : possible error: we got a different move than we submitted (noop\=[])
+1608744963050: ==================================================
+1608744963050:last_moves([move(wn,b,1,a,3),noop])-new_state([cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744963051 : error: game_play(base.chess.1608744960899, [move(wn, b, 1, a, 3), noop], 1374.90793156624, _10217) failed!
+1608744963254 : possible error: we got a different move than we submitted (move(bq, d, 8, f, 6)\=[])
+1608744963254: ==================================================
+1608744963254:last_moves([noop,move(bq,d,8,f,6)])-new_state([cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(d,8,b),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,6,bq),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744963254 : error: game_play(base.chess.1608744960899, [noop, move(bq, d, 8, f, 6)], 1375.11193156242, _11586) failed!
+1608744963506 : possible error: we got a different move than we submitted (noop\=[])
+1608744963506: ==================================================
+1608744963506:last_moves([move(wp,c,2,c,4),noop])-new_state([pawn_moved_two(wp,c),cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,6,bq),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744963507 : error: game_play(base.chess.1608744960899, [move(wp, c, 2, c, 4), noop], 1375.36593174934, _12955) failed!
+1608744963726 : possible error: we got a different move than we submitted (move(bq, f, 6, f, 5)\=[])
+1608744963726: ==================================================
+1608744963726:last_moves([noop,move(bq,f,6,f,5)])-new_state([cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744963727 : error: game_play(base.chess.1608744960899, [noop, move(bq, f, 6, f, 5)], 1375.58593153954, _14324) failed!
+1608744963994 : possible error: we got a different move than we submitted (noop\=[])
+1608744963994: ==================================================
+1608744963994:last_moves([move(wp,e,2,e,4),noop])-new_state([pawn_moved_two(wp,e),cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(h,3,b)])
+1608744963994 : error: game_play(base.chess.1608744960899, [move(wp, e, 2, e, 4), noop], 1375.84893155098, _15693) failed!
+1608744964446 : possible error: we got a different move than we submitted (move(bp, h, 7, h, 6)\=[])
+1608744964446: ==================================================
+1608744964446:last_moves([noop,move(bp,h,7,h,6)])-new_state([cell(a,3,wn),cell(b,1,b),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b)])
+1608744964448 : error: game_play(base.chess.1608744960899, [noop, move(bp, h, 7, h, 6)], 1376.30693173409, _17568) failed!
+1608744964703 : possible error: we got a different move than we submitted (noop\=[])
+1608744964703: ==================================================
+1608744964703:last_moves([move(wr,a,1,b,1),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,bp),cell(e,7,b),cell(f,3,wn),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744964703 : error: game_play(base.chess.1608744960899, [move(wr, a, 1, b, 1), noop], 1376.54493165016, _18937) failed!
+1608744964910 : possible error: we got a different move than we submitted (move(bn, g, 8, e, 7)\=[])
+1608744964911: ==================================================
+1608744964911:last_moves([noop,move(bn,g,8,e,7)])-new_state([cell(a,1,b),cell(a,3,wn),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,bp),cell(e,7,bn),cell(f,3,wn),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744964911 : error: game_play(base.chess.1608744960899, [noop, move(bn, g, 8, e, 7)], 1376.77193164825, _20306) failed!
+1608744965195 : possible error: we got a different move than we submitted (noop\=[])
+1608744965196: ==================================================
+1608744965196:last_moves([move(wn,f,3,e,5),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,wn),cell(e,7,bn),cell(f,3,b),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744965196 : error: game_play(base.chess.1608744960899, [move(wn, f, 3, e, 5), noop], 1377.05793166161, _21675) failed!
+1608744965402 : possible error: we got a different move than we submitted (move(bp, a, 7, a, 6)\=[])
+1608744965402: ==================================================
+1608744965402:last_moves([noop,move(bp,a,7,a,6)])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,wn),cell(e,7,bn),cell(f,3,b),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744965403 : error: game_play(base.chess.1608744960899, [noop, move(bp, a, 7, a, 6)], 1377.26293158531, _23044) failed!
+1608744965668 : possible error: we got a different move than we submitted (noop\=[])
+1608744965669: ==================================================
+1608744965669:last_moves([move(wb,f,1,d,3),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,3,wb),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,wn),cell(e,7,bn),cell(f,1,b),cell(f,3,b),cell(f,5,bq),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744965669 : error: game_play(base.chess.1608744960899, [move(wb, f, 1, d, 3), noop], 1377.5269317627, _24413) failed!
+1608744965896 : possible error: we got a different move than we submitted (move(bq, f, 5, e, 6)\=[])
+1608744965896: ==================================================
+1608744965896:last_moves([noop,move(bq,f,5,e,6)])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,3,wb),cell(d,8,b),cell(e,2,b),cell(e,4,wp),cell(e,5,wn),cell(e,6,bq),cell(e,7,bn),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wr,a,1)])
+1608744965896 : error: game_play(base.chess.1608744960899, [noop, move(bq, f, 5, e, 6)], 1377.75793170929, _25782) failed!
+1608744966337 : possible error: we got a different move than we submitted (noop\=[])
+1608744966337: ==================================================
+1608744966337:last_moves([move(wk,e,1,e,2),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,wn),cell(e,6,bq),cell(e,7,bn),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744966337 : error: game_play(base.chess.1608744960899, [move(wk, e, 1, e, 2), noop], 1378.19593167305, _27151) failed!
+1608744966636 : possible error: we got a different move than we submitted (move(bn, e, 7, c, 6)\=[])
+1608744966636: ==================================================
+1608744966636:last_moves([noop,move(bn,e,7,c,6)])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,wn),cell(e,6,bq),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744966636 : error: game_play(base.chess.1608744960899, [noop, move(bn, e, 7, c, 6)], 1378.49693155289, _28520) failed!
+1608744967265 : possible error: we got a different move than we submitted (noop\=[])
+1608744967265: ==================================================
+1608744967265:last_moves([move(wq,d,1,a,4),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,wn),cell(e,6,bq),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744967265 : error: game_play(base.chess.1608744960899, [move(wq, d, 1, a, 4), noop], 1379.12593173981, _30395) failed!
+1608744967494 : possible error: we got a different move than we submitted (move(bq, e, 6, g, 4)\=[])
+1608744967494: ==================================================
+1608744967494:last_moves([noop,move(bq,e,6,g,4)])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,wn),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,bq),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),check(white,queen,g,4)])
+1608744967495 : error: game_play(base.chess.1608744960899, [noop, move(bq, e, 6, g, 4)], 1379.35493159294, _31764) failed!
+1608744967814 : possible error: we got a different move than we submitted (noop\=[])
+1608744967814: ==================================================
+1608744967814:last_moves([move(wn,e,5,g,4),noop])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,6,bp),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744967815 : error: game_play(base.chess.1608744960899, [move(wn, e, 5, g, 4), noop], 1379.67693161964, _33133) failed!
+1608744968406 : possible error: we got a different move than we submitted (move(bp, h, 6, h, 5)\=[])
+1608744968407: ==================================================
+1608744968407:last_moves([noop,move(bp,h,6,h,5)])-new_state([cell(a,1,b),cell(a,3,wn),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,wr),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744968407 : error: game_play(base.chess.1608744960899, [noop, move(bp, h, 6, h, 5)], 1380.26893162727, _34502) failed!
+1608744968629 : possible error: we got a different move than we submitted (noop\=[])
+1608744968629: ==================================================
+1608744968629:last_moves([move(wr,b,1,a,1),noop])-new_state([cell(a,1,wr),cell(a,3,wn),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,b),cell(b,4,bb),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744968629 : error: game_play(base.chess.1608744960899, [move(wr, b, 1, a, 1), noop], 1380.48893165588, _35871) failed!
+1608744968922 : possible error: we got a different move than we submitted (move(bb, b, 4, a, 3)\=[])
+1608744968923: ==================================================
+1608744968923:last_moves([noop,move(bb,b,4,a,3)])-new_state([cell(a,1,wr),cell(a,3,bb),cell(a,4,wq),cell(a,6,bp),cell(a,7,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744968923 : error: game_play(base.chess.1608744960899, [noop, move(bb, b, 4, a, 3)], 1380.78293156624, _37240) failed!
+1608744969537 : possible error: we got a different move than we submitted (noop\=[])
+1608744969538: ==================================================
+1608744969538:last_moves([move(wq,a,4,a,3),noop])-new_state([cell(a,1,wr),cell(a,3,wq),cell(a,4,b),cell(a,6,bp),cell(a,7,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,b),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744969538 : error: game_play(base.chess.1608744960899, [move(wq, a, 4, a, 3), noop], 1381.39793157578, _38609) failed!
+1608744969718 : possible error: we got a different move than we submitted (move(bk, e, 8, d, 8)\=[])
+1608744969718: ==================================================
+1608744969718:last_moves([noop,move(bk,e,8,d,8)])-new_state([cell(a,1,wr),cell(a,3,wq),cell(a,4,b),cell(a,6,bp),cell(a,7,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,4,wn),cell(g,8,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(bk,e,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1)])
+1608744969718 : error: game_play(base.chess.1608744960899, [noop, move(bk, e, 8, d, 8)], 1381.57893157005, _39978) failed!
+1608744969945 : possible error: we got a different move than we submitted (noop\=[])
+1608744969945: ==================================================
+1608744969945:last_moves([move(wr,h,1,g,1),noop])-new_state([cell(a,1,wr),cell(a,3,wq),cell(a,4,b),cell(a,6,bp),cell(a,7,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(bk,e,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744969945 : error: game_play(base.chess.1608744960899, [move(wr, h, 1, g, 1), noop], 1381.80693173409, _41347) failed!
+1608744970144 : possible error: we got a different move than we submitted (move(br, a, 8, a, 7)\=[])
+1608744970144: ==================================================
+1608744970144:last_moves([noop,move(br,a,8,a,7)])-new_state([cell(a,1,wr),cell(a,3,wq),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744970144 : error: game_play(base.chess.1608744960899, [noop, move(br, a, 8, a, 7)], 1382.00493168831, _42716) failed!
+1608744970301 : possible error: we got a different move than we submitted (noop\=[])
+1608744970301: ==================================================
+1608744970301:last_moves([move(wq,a,3,f,8),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,wq),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1),check(black,queen,f,8)])
+1608744970302 : error: game_play(base.chess.1608744960899, [move(wq, a, 3, f, 8), noop], 1382.16293168068, _44085) failed!
+1608744970430 : possible error: we got a different move than we submitted (move(br, h, 8, f, 8)\=[])
+1608744970430: ==================================================
+1608744970431:last_moves([noop,move(br,h,8,f,8)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,b),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,wk),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744970431 : error: game_play(base.chess.1608744960899, [noop, move(br, h, 8, f, 8)], 1382.29093170166, _45454) failed!
+1608744970634 : possible error: we got a different move than we submitted (noop\=[])
+1608744970634: ==================================================
+1608744970634:last_moves([move(wk,e,2,d,1),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,8,bk),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744970634 : error: game_play(base.chess.1608744960899, [move(wk, e, 2, d, 1), noop], 1382.49593162537, _46823) failed!
+1608744970799 : possible error: we got a different move than we submitted (move(bp, d, 7, d, 5)\=[])
+1608744970799: ==================================================
+1608744970799:last_moves([noop,move(bp,d,7,d,5)])-new_state([pawn_moved_two(bp,d),cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,4,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,bk),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744970799 : error: game_play(base.chess.1608744960899, [noop, move(bp, d, 7, d, 5)], 1382.66093158722, _48698) failed!
+1608744971388 : possible error: we got a different move than we submitted (noop\=[])
+1608744971388: ==================================================
+1608744971388:last_moves([move(wp,b,2,b,4),noop])-new_state([pawn_moved_two(wp,b),cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,bk),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744971388 : error: game_play(base.chess.1608744960899, [move(wp, b, 2, b, 4), noop], 1383.24993157387, _50067) failed!
+1608744971537 : possible error: we got a different move than we submitted (move(bk, d, 8, e, 7)\=[])
+1608744971537: ==================================================
+1608744971537:last_moves([noop,move(bk,d,8,e,7)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,bk),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744971537 : error: game_play(base.chess.1608744960899, [noop, move(bk, d, 8, e, 7)], 1383.39793157578, _51436) failed!
+1608744971821 : possible error: we got a different move than we submitted (noop\=[])
+1608744971822: ==================================================
+1608744971822:last_moves([move(wp,g,2,g,3),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,bk),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,5,bp),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744971822 : error: game_play(base.chess.1608744960899, [move(wp, g, 2, g, 3), noop], 1383.68293166161, _52805) failed!
+1608744971969 : possible error: we got a different move than we submitted (move(bp, h, 5, h, 4)\=[])
+1608744971970: ==================================================
+1608744971970:last_moves([noop,move(bp,h,5,h,4)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,bk),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,wn),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744971970 : error: game_play(base.chess.1608744960899, [noop, move(bp, h, 5, h, 4)], 1383.83193159103, _54174) failed!
+1608744972167 : possible error: we got a different move than we submitted (noop\=[])
+1608744972168: ==================================================
+1608744972168:last_moves([move(wn,g,4,h,6),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,bk),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,b),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,wn),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744972168 : error: game_play(base.chess.1608744960899, [move(wn, g, 4, h, 6), noop], 1384.0269317627, _55543) failed!
+1608744972355 : possible error: we got a different move than we submitted (move(bk, e, 7, f, 6)\=[])
+1608744972355: ==================================================
+1608744972355:last_moves([noop,move(bk,e,7,f,6)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,bk),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,b),cell(g,8,b),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,wn),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744972355 : error: game_play(base.chess.1608744960899, [noop, move(bk, e, 7, f, 6)], 1384.2169315815, _56912) failed!
+1608744972481 : possible error: we got a different move than we submitted (noop\=[])
+1608744972482: ==================================================
+1608744972482:last_moves([move(wn,h,6,g,8),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,bk),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1),check(black,knight,g,8)])
+1608744972482 : error: game_play(base.chess.1608744960899, [move(wn, h, 6, g, 8), noop], 1384.34293174744, _58281) failed!
+1608744972681 : possible error: we got a different move than we submitted (move(bk, f, 6, g, 6)\=[])
+1608744972681: ==================================================
+1608744972681:last_moves([noop,move(bk,f,6,g,6)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,wr),cell(g,2,b),cell(g,3,wp),cell(g,4,b),cell(g,6,bk),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744972682 : error: game_play(base.chess.1608744960899, [noop, move(bk, f, 6, g, 6)], 1384.5429315567, _59650) failed!
+1608744972904 : possible error: we got a different move than we submitted (noop\=[])
+1608744972905: ==================================================
+1608744972905:last_moves([move(wr,g,1,g,2),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,wp),cell(g,4,b),cell(g,6,bk),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bp),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744972905 : error: game_play(base.chess.1608744960899, [move(wr, g, 1, g, 2), noop], 1384.76693177223, _61019) failed!
+1608744973060 : possible error: we got a different move than we submitted (move(bp, h, 4, g, 3)\=[])
+1608744973061: ==================================================
+1608744973061:last_moves([noop,move(bp,h,4,g,3)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,wp),cell(e,5,b),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,6,bk),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,b),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744973061 : error: game_play(base.chess.1608744960899, [noop, move(bp, h, 4, g, 3)], 1384.92093157768, _62388) failed!
+1608744973303 : possible error: we got a different move than we submitted (noop\=[])
+1608744973303: ==================================================
+1608744973303:last_moves([move(wp,e,4,e,5),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,6,bk),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,b),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1),check(black,bishop,d,3)])
+1608744973303 : error: game_play(base.chess.1608744960899, [move(wp, e, 4, e, 5), noop], 1385.16493177414, _63757) failed!
+1608744973484 : possible error: we got a different move than we submitted (move(bk, g, 6, g, 5)\=[])
+1608744973484: ==================================================
+1608744973484:last_moves([noop,move(bk,g,6,g,5)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,bk),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,b),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744973484 : error: game_play(base.chess.1608744960899, [noop, move(bk, g, 6, g, 5)], 1385.34493160248, _65126) failed!
+1608744973815 : possible error: we got a different move than we submitted (noop\=[])
+1608744973816: ==================================================
+1608744973816:last_moves([move(wb,d,3,b,1),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wb),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,b),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,bk),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,b),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744973816 : error: game_play(base.chess.1608744960899, [move(wb, d, 3, b, 1), noop], 1385.67693161964, _67001) failed!
+1608744973982 : possible error: we got a different move than we submitted (move(bk, g, 5, h, 4)\=[])
+1608744973982: ==================================================
+1608744973982:last_moves([noop,move(bk,g,5,h,4)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wb),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,b),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744973982 : error: game_play(base.chess.1608744960899, [noop, move(bk, g, 5, h, 4)], 1385.84393167496, _68370) failed!
+1608744974830 : possible error: we got a different move than we submitted (noop\=[])
+1608744974830: ==================================================
+1608744974830:last_moves([move(wb,b,1,d,3),noop])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,b),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,br),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744974830 : error: game_play(base.chess.1608744960899, [move(wb, b, 1, d, 3), noop], 1386.69193172455, _69739) failed!
+1608744974983 : possible error: we got a different move than we submitted (move(br, f, 8, e, 8)\=[])
+1608744974984: ==================================================
+1608744974984:last_moves([noop,move(br,f,8,e,8)])-new_state([cell(a,1,wr),cell(a,3,b),cell(a,4,b),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744974984 : error: game_play(base.chess.1608744960899, [noop, move(br, f, 8, e, 8)], 1386.84593176842, _71108) failed!
+1608744975238 : possible error: we got a different move than we submitted (noop\=[])
+1608744975238: ==================================================
+1608744975238:last_moves([move(wp,a,2,a,4),noop])-new_state([pawn_moved_two(wp,a),cell(a,1,wr),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,bp),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744975239 : error: game_play(base.chess.1608744960899, [move(wp, a, 2, a, 4), noop], 1387.09993171692, _72477) failed!
+1608744975395 : possible error: we got a different move than we submitted (move(bp, g, 3, h, 2)\=[])
+1608744975396: ==================================================
+1608744975396:last_moves([noop,move(bp,g,3,h,2)])-new_state([cell(a,1,wr),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,b),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744975396 : error: game_play(base.chess.1608744960899, [noop, move(bp, g, 3, h, 2)], 1387.25493168831, _73846) failed!
+1608744976193 : possible error: we got a different move than we submitted (noop\=[])
+1608744976193: ==================================================
+1608744976193:last_moves([move(wr,a,1,b,1),noop])-new_state([cell(a,1,b),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wr),cell(b,2,b),cell(b,4,wp),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744976193 : error: game_play(base.chess.1608744960899, [move(wr, a, 1, b, 1), noop], 1388.05293154716, _75215) failed!
+1608744976351 : possible error: we got a different move than we submitted (move(bp, b, 7, b, 5)\=[])
+1608744976351: ==================================================
+1608744976351:last_moves([noop,move(bp,b,7,b,5)])-new_state([pawn_moved_two(bp,b),cell(a,1,b),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wr),cell(b,2,b),cell(b,4,wp),cell(b,5,bp),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,wb),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,b),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744976351 : error: game_play(base.chess.1608744960899, [noop, move(bp, b, 7, b, 5)], 1388.21193170547, _76584) failed!
+1608744976530 : possible error: we got a different move than we submitted (noop\=[])
+1608744976531: ==================================================
+1608744976531:last_moves([move(wb,d,3,h,7),noop])-new_state([cell(a,1,b),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wr),cell(b,2,b),cell(b,4,wp),cell(b,5,bp),cell(b,7,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,b),cell(d,5,bp),cell(d,7,b),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,wb),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744976531 : error: game_play(base.chess.1608744960899, [move(wb, d, 3, h, 7), noop], 1388.38993167877, _77953) failed!
+1608744976727 : possible error: we got a different move than we submitted (move(bn, b, 8, d, 7)\=[])
+1608744976727: ==================================================
+1608744976727:last_moves([noop,move(bn,b,8,d,7)])-new_state([cell(a,1,b),cell(a,2,b),cell(a,3,b),cell(a,4,wp),cell(a,6,bp),cell(a,7,br),cell(a,8,b),cell(b,1,wr),cell(b,2,b),cell(b,4,wp),cell(b,5,bp),cell(b,7,b),cell(b,8,b),cell(c,2,b),cell(c,4,wp),cell(c,6,bn),cell(d,1,wk),cell(d,3,b),cell(d,5,bp),cell(d,7,bn),cell(d,8,b),cell(e,1,b),cell(e,2,b),cell(e,4,b),cell(e,5,wp),cell(e,6,b),cell(e,7,b),cell(e,8,br),cell(f,1,b),cell(f,3,b),cell(f,5,b),cell(f,6,b),cell(f,8,b),cell(g,1,b),cell(g,2,wr),cell(g,3,b),cell(g,4,b),cell(g,5,b),cell(g,6,b),cell(g,8,wn),cell(h,1,b),cell(h,2,bp),cell(h,3,b),cell(h,4,bk),cell(h,5,b),cell(h,6,b),cell(h,7,wb),cell(h,8,b),piece_has_moved(bk,e,8),piece_has_moved(br,a,8),piece_has_moved(br,h,8),piece_has_moved(wk,e,1),piece_has_moved(wr,a,1),piece_has_moved(wr,h,1)])
+1608744976727 : error: game_play(base.chess.1608744960899, [noop, move(bn, b, 8, d, 7)], 1388.58693170547, _79322) failed!

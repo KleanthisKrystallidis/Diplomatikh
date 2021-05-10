@@ -1,0 +1,67 @@
+:- module(feature_combination).
+
+:-use_module(listut).
+
+feature_combination_creator(Xs, Ys, Zs) :-
+    (
+        foreach(X,Xs),
+        fromto(Zs, Zs4, Zs1, []),
+        param(Ys)
+    do	
+		functor(X,NameX,ArrityX),
+		make_argument_list(X,Xlist),
+        (
+            foreach(Y,Ys),
+            fromto(Zs4, Zs3, Zs2, Zs1),
+            param(X),
+			param(NameX),
+			param(ArrityX),
+			param(Xlist)
+        do
+           (functor(Y,NameY,ArrityY),make_argument_list(Y,Ylist),NameX == NameY,ArrityX == ArrityY,one_arg_diff(Xlist,Ylist,ArrityX) ->
+		   get_complex_list(K),append(K,[X - Y],L),set_complex_list(L) ; true)
+        )
+    )
+	,get_complex_list(O),print_list(O).
+	
+	
+delete_every_even(O):-	
+	length(O,G),
+	(param(O),for(J,1,G,2) do nth1(J,O,ElemO),get_nd_complex_list(U),append([ElemO],U,P),set_nd_complex_list(P)),
+	get_nd_complex_list(D).
+	
+
+one_arg_diff(X,Y,Arrity):-
+set_counter(0),
+(param(C),param(X),param(Y),for(I,1,Arrity) do
+	nth1(I,X,ElemX),nth1(I,Y,ElemY),pseudo_comparison(ElemX,ElemY),one_variable_check(ElemX,ElemY) -> incr; true),
+	get_counter(O),O =:= Arrity - 1.
+	
+	
+
+incr:-
+	get_counter(X),
+    X1 is X+1,
+	set_counter(X1).
+	
+:- local variable(counter,0).
+:- mode set_counter(++).
+set_counter(V) :- setval(counter, V).
+get_counter(V) :- getval(counter, V).
+
+:- local variable(complex_list,[]).
+:- mode set_complex_list(++).
+set_complex_list(V) :- setval(complex_list, V).
+get_complex_list(V) :- getval(complex_list, V).
+
+:- local variable(nd_complex_list,[]).
+:- mode set_nd_complex_list(++).
+set_nd_complex_list(V) :- setval(nd_complex_list, V).
+get_nd_complex_list(V) :- getval(nd_complex_list, V).
+
+pseudo_comparison(X,Y):-((X == Y) -> true ; var(X),var(Y) ; var(X),nonvar(Y) ; nonvar(X),var(Y)).
+one_variable_check(X,Y):-(var(X),nonvar(Y) -> true; nonvar(X),var(Y)),set_counter(9000).
+one_variable_check(X,Y):-true.
+
+make_argument_list(Feature,Arg_List):-
+(foreacharg(X,Feature), foreach(X,Arg_List) do true).
