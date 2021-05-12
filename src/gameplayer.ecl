@@ -102,8 +102,9 @@
 :- use_module(game_description).
 :- use_module(compute_best_move).
 :- use_module(evaluation).
-
+:- use_module(random_move).
 :- lib(timeout).
+%:-use_module(monte_carlo).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 :- mode game_start(++, ++, +, ++, ++, ++).
@@ -122,14 +123,10 @@ game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
 	% load the rules
 	load_rules(Rules),
 	%write_term(stream,Rules,[depth(full)]),nl(stream),nl(stream),
-	discription_feature_finder,
-	term_manipulator,
 	
 	% compute and save the initial state
 	initial_state(InitialState),
 	set_current_state(InitialState),
-	get_feature_list(Features),
-	write_term(stream,Features,[depth(full)]),nl(stream),nl(stream),
 	
 	% do something until the deadline
 	time_to_deadline(TimeToDeadline),
@@ -149,6 +146,10 @@ game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
 :- mode game_start_timed_part(++, ++).
 game_start_timed_part(InitialState, Role) :-
 	log_printf("gameplayer.log","our role: %w, initial state: %w",[Role, InitialState]),
+	discription_feature_finder, 
+	term_manipulator,
+	get_feature_list(Features),
+	usable_position_generator(Role,InitialState,100),
 	% Here you should do things like:
 	% - analyzing the game
 	% - generating an evaluation function

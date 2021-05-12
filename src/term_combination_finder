@@ -15,13 +15,40 @@
  
  term_creator(Term,Arrity,Counter,L,Arg_List):-
 	Counter > 0,list_maker(L),
-	(param(Arg_List),param(Arrity),param(Term),param(Counter),param(L),for(I,1,Arrity) do 
-	(copy_term(Term,Term2),nth1(I,Arg_List,Elem),arg(I,Term2,Elem),copy_term(Term2,List_Term),append([Term2],L,O),Counterin is Counter - 1,
-	term_creator(List_Term,Arrity,Counterin,O,Arg_List))).
+	(
+	param(Arg_List),
+	param(Arrity),
+	param(Term),
+	param(Counter),
+	param(L),
+	for(I,1,Arrity) do 
+		(
+		copy_term(Term,Term2),
+		nth1(I,Arg_List,Elem),
+		arg(I,Term2,Elem),
+		copy_term(Term2,List_Term),
+		append([Term2],L,O),
+		Counterin is Counter - 1,
+		term_creator(List_Term,Arrity,Counterin,O,Arg_List)
+		)
+	).
 
- term_creator(Term,Arrity,Counter,L,Arg_List):-
-	(param(Arg_List),param(O),param(Arrity),param(Term),param(Counter),param(L),for(I,1,Arrity) do 
-	(copy_term(Term,Term2),nth1(I,Arg_List,Elem),arg(I,Term2,Elem),copy_term(Term,List_Term),append([List_Term],L,O))),list_maker(O).
+ term_creator(Term,Arrity,_Counter,L,Arg_List):-
+	(
+	param(Arg_List),
+	param(O),
+	param(Term),
+	param(L),
+	for(I,1,Arrity) do 
+		(
+		copy_term(Term,Term2),
+		nth1(I,Arg_List,Elem),
+		arg(I,Term2,Elem),
+		copy_term(Term,List_Term),
+		append([List_Term],L,O)
+		)
+	),
+	list_maker(O).
 
 
 list_maker(L):-
@@ -44,7 +71,7 @@ list_unique_2(X, Xs, So_far, [X|Us]) :-
     maplist(diff(X), So_far),
     list_unique_1(Xs, [X|So_far], Us).
 	
-list_unique_2(X, Xs, So_far, Us) :-
+list_unique_2(_X, Xs, So_far, Us) :-
     list_unique_1(Xs, So_far, Us).
 
 diff(X,Y):-not same_term(X,Y).

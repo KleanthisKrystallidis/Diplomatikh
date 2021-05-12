@@ -1,0 +1,12 @@
+:- module(dodo).
+
+
+score(3,200,5).
+score(1,100,2).
+score(4,800,6).
+
+the_fuck(X,Y,Z):-
+	Z is X / Y .
+
+headcutter([H|_],M):-
+	H = M.

@@ -32,7 +32,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 :- mode handle_message(++, ++, -).
-handle_message(MessageString, ReceiveTime, Reply) :-
+handle_message(MessageString, _ReceiveTime, Reply) :- % Recieve time has changed to _ReceiveTime
 	(MessageString == "( INFO )"-> true ; writeln("error parsing message1!"), fail),
 	Reply="available". 
 handle_message(MessageString, ReceiveTime, Reply) :-

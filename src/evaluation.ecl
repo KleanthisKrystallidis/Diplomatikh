@@ -38,12 +38,12 @@ create_general_terms(Features):-
 		(functor(Feature,Name,Arrity),
 		make_argument_list(Feature,Arg_List),
 		viable_arg_list(Arg_List)->
-			general_term_helper(Arg_List,Name,Arrity,Feature)
+			general_term_helper(Arg_List,Name,Arrity)
 		;
 			true)
 	).
 	
-general_term_helper(Arg_List,Name,Arrity,Feature):-
+general_term_helper(Arg_List,Name,Arrity):-
 	functor(New_term,Name,Arrity),
 	add_to_feature_list2([New_term]),Counter is Arrity - 1,
 	combination_finder(New_term,Arrity,Counter,[],M,Arg_List),
