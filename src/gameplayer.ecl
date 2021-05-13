@@ -103,6 +103,7 @@
 :- use_module(compute_best_move).
 :- use_module(evaluation).
 :- use_module(random_move).
+:- use_module(statistics_calculator).
 :- lib(timeout).
 %:-use_module(monte_carlo).
 
@@ -148,8 +149,10 @@ game_start_timed_part(InitialState, Role) :-
 	log_printf("gameplayer.log","our role: %w, initial state: %w",[Role, InitialState]),
 	discription_feature_finder, 
 	term_manipulator,
-	get_feature_list(Features),
 	usable_position_generator(Role,InitialState,100),
+	make_stat_terms,
+	get_feature_stat_term_list(List),
+	print_list(List),
 	% Here you should do things like:
 	% - analyzing the game
 	% - generating an evaluation function

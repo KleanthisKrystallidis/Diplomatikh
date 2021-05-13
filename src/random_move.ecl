@@ -19,25 +19,26 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 	param(State),
 	for(_I,1,Number_of_Sequences) do
 		make_random_moves(Role,State,3),
+		set_subseq_list([]),
 		(terminal(State) ->
 		(	
 			goal(Role, MyValue, State),
 			get_subseq_list(Sulist),
 			get_seq_list(Selist),
-			append(Sulist,[MyValue],Subseqlist),
+			append([MyValue],Sulist,Subseqlist),
 			append([Subseqlist],Selist,Sequencelist),
 			set_seq_list(Sequencelist)
 		)
 		;
 		(
-			random_int_between(2,5,K),
+			random_int_between(2,3,K),    % number of states in subsequence
 			(
 			param(Role),
 			for(_P,1,K) do
-				random_int_between(1,3,J),
+				random_int_between(1,3,J),            %number of moves between kept states
 				get_current_state(NewState),
 				get_subseq_list(Slist),
-				append(NewState,Slist,Sublist),
+				append([NewState],Slist,Sublist),
 				set_subseq_list(Sublist),
 				make_random_moves(Role,NewState,J)
 			
@@ -46,7 +47,7 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 			monte_carlo_call(Role,NewState2,10,Score),
 			get_subseq_list(Sulist),
 			get_seq_list(Selist),
-			append(Sulist,[Score],Subseqlist),
+			append([Score],Sulist,Subseqlist),
 			append([Subseqlist],Selist,Sequencelist),
 			set_seq_list(Sequencelist)
 		)
@@ -113,13 +114,4 @@ param(Roles),
 	)
 ).
 	
-:- local variable(subseq_list, []).
-:- mode set_subseq_list(++).
-set_subseq_list(V) :- setval(subseq_list, V).
-get_subseq_list(V) :- getval(subseq_list, V).
-
-:- local variable(seq_list, [[]]).    %may cause problems down the way it seeems to add an empty list at the end which is unitended KEEP AN EYE
-:- mode set_seq_list(++).
-set_seq_list(V) :- setval(seq_list, V).
-get_seq_list(V) :- getval(seq_list, V).
 

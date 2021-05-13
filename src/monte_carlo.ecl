@@ -203,29 +203,3 @@ update_current_state2(Moves, CurrentState) :-
 		CurrentState=LastState
 	).
 	
-:- local variable(scores, []).
-:- mode set_scores(++).
-set_scores(V) :- setval(scores, V).
-get_scores(V) :- getval(scores, V).
-
-:- local variable(idmaxi, 0).
-:- mode set_idmaxi(++).
-set_idmaxi(V) :- setval(idmaxi, V).
-get_idmaxi(V) :- getval(idmaxi, V).
-	
-
-:- local variable(maxi, 0).
-:- mode set_maxi(++).
-set_maxi(V) :- setval(maxi, V).
-get_maxi(V) :- getval(maxi, V).
-	
-	
-:- local variable(move_id, []).
-:- mode set_move_id(++).
-set_move_id(V) :- setval(move_id, V).
-get_move_id(V) :- getval(move_id, V).
-
-:- local variable(move_id_list, [[]]).
-:- mode set_move_id_list(++).
-set_move_id_list(V) :- setval(move_id_list, V).
-get_move_id_list(V) :- getval(move_id_list, V).
