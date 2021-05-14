@@ -22,7 +22,7 @@ make_stat_terms:-
 		set_sumsv(0),
 		set_countersv(0),
 		
-		functor(Feature_stat_term,featurestat,4),
+		functor(Feature_stat_term,featurestat,3),
 		arg(1,Feature_stat_term,Feature),
 		
 		per_subsequence(Seq_List,Feature),
@@ -36,7 +36,7 @@ make_stat_terms:-
 		return_mean(SumSc,Counter,MeanSc),    %find the mean of Score across all states
 		
 		get_expected_score(Expected_Score),
-		return_sum(SumSc,Expected_Score,New_Expected_Score),
+		return_sum(MeanSc,Expected_Score,New_Expected_Score),  %change SumSc to MeanSc
 		set_expected_score(New_Expected_Score),
 		
 		per_subsequence2(Seq_List,Feature,MeanSc,MeanVal),
@@ -53,9 +53,14 @@ make_stat_terms:-
 		
 		return_stability(TV,SV,Stab),
 		
+		abs(Corr,Abs_Corr),
+		min(Abs_Corr,Stab,Sorter),
 		
-		arg(2,Feature_stat_term,Corr),
-		arg(3,Feature_stat_term,Stab),
+		return_product(Corr,Stab,Weight),
+		
+		arg(2,Feature_stat_term,Weight),
+		arg(3,Feature_stat_term,Sorter),
+
 		
 		get_feature_stat_term_list(F_stat_list),
 		append([Feature_stat_term],F_stat_list,New_F_stat_list),
@@ -160,10 +165,10 @@ per_state2(N_Subseq_List,Feature,Score,MeanSc,MeanVal):-
 		return_sum(ScoreDiff_Sq,SqSc_Sum,New_SqSc_Sum), % calculate the sum of (Score-meanScore)^2 across all states
 		set_sumscdiff(New_SqSc_Sum),
 		
-		return_product(ScoreDiff,ValueDiff,Product_Value_Score), % calculate ( (Value-meanValue)^2 * (Score-meanScore)^2 ) 
+		return_product(ScoreDiff,ValueDiff,Product_Value_Score), % calculate ( (Value-meanValue)* (Score-meanScore) ) 
 		
 		get_sum_val_score_prod(Sum_Prod),
-		return_sum(Product_Value_Score,Sum_Prod,New_Sum_Prod), % calculate the sum of ( (Value-meanValue)^2 * (Score-meanScore)^2 )  across all states
+		return_sum(Product_Value_Score,Sum_Prod,New_Sum_Prod), % calculate the sum of ( (Value-meanValue) * (Score-meanScore) )  across all states
 		set_sum_val_score_prod(New_Sum_Prod)
 		
 		
@@ -201,9 +206,13 @@ return_variance(A,B,Var):-
 	Var is A / B.
 
 return_correlation(A,B,AB,Corr):-
-	X is A + B,
-	sqrt(X,Y),
-	Corr is AB / Y.
+	( A \== 0.0,B \== 0.0 ->
+		X is A * B,
+		sqrt(X,Y),
+		Corr is AB / Y
+	;
+		Corr = 0
+	).
 	
 return_product(X,Y,Z):-
 	Z is X * Y.
@@ -216,6 +225,7 @@ return_diff(X,Y,Z):-
 
 return_sum(X,Y,Z):-
 	Z is X + Y.
+	
 	
 return_mean(Summed_Data,Number_of_Data,Mean):-
 	Mean is Summed_Data / Number_of_Data .

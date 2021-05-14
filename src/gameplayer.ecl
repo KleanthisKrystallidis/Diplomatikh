@@ -104,6 +104,7 @@
 :- use_module(evaluation).
 :- use_module(random_move).
 :- use_module(statistics_calculator).
+:- use_module(evaluation_function_creator).
 :- lib(timeout).
 %:-use_module(monte_carlo).
 
@@ -152,7 +153,11 @@ game_start_timed_part(InitialState, Role) :-
 	usable_position_generator(Role,InitialState,100),
 	make_stat_terms,
 	get_feature_stat_term_list(List),
-	print_list(List),
+	sort(3,$>,List,Sorted_List),
+	keep_x_best(Sorted_List,30),
+	get_final_term_list(NList),
+	print_list(NList),
+	
 	% Here you should do things like:
 	% - analyzing the game
 	% - generating an evaluation function

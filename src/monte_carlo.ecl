@@ -13,6 +13,8 @@ monte_carlo_call(Role,State,Number_of_tries,Best_Score):-
 	(terminal(State) ->	
 		goal(Role,Best_Score,State)
 	;
+		set_move_id_list([]),
+		set_scores([]),
 		monte_carlo_search(Role,State,Number_of_tries,Best_Score)
 	).
 

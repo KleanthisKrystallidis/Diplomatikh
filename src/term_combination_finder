@@ -11,7 +11,7 @@
 
 
  combination_finder(Term,Arrity,Counter,L,M,Arg_List):-
-	term_creator(Term,Arrity,Counter,L,Arg_List),get_variable_list(N),list_unique(N,M).
+	term_creator(Term,Arrity,Counter,L,Arg_List),get_variable_list(N),list_unique(N,M),set_variable_list([]).
  
  term_creator(Term,Arrity,Counter,L,Arg_List):-
 	Counter > 0,list_maker(L),

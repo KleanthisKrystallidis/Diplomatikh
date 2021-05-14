@@ -42,7 +42,8 @@
 	set_counterstsub/1,
 	get_counterstsub/1,
 	
-	
+	set_final_term_list/1,
+	get_final_term_list/1,
 	
 	set_sumvaldiff/1,
 	get_sumvaldiff/1,
@@ -67,6 +68,9 @@
 	
 	set_expected_score/1,
 	get_expected_score/1,
+	
+	set_eval/1,
+	get_eval/1,
 	
 	set_feature_stat_term_list/1,
 	get_feature_stat_term_list/1,
@@ -264,3 +268,13 @@ get_sumsv(V) :- getval(sumsv, V).
 :- mode set_sumsv(++).
 set_expected_score(V) :- setval(expected_score, V).
 get_expected_score(V) :- getval(expected_score, V).
+
+:- local variable(final_term_list, []).
+:- mode set_final_term_list(++).
+set_final_term_list(V) :- setval(final_term_list, V).
+get_final_term_list(V) :- getval(final_term_list, V).
+
+:- local variable(eval, []).
+:- mode set_eval(++).
+set_eval(V) :- setval(eval, V).
+get_eval(V) :- getval(eval, V).

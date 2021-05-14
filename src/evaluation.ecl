@@ -30,7 +30,7 @@ discription_feature_finder:-
 term_manipulator:-
 	get_feature_list(Features),
 	create_general_terms(Features),
-	get_feature_list2(F),add_to_feature_list(F),get_feature_list(K).
+	get_feature_list2(F),add_to_feature_list(F),set_feature_list2([]).
 
 :-mode create_general_terms(++).
 create_general_terms(Features):-
