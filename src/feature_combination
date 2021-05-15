@@ -1,6 +1,18 @@
 :- module(feature_combination).
 
 :-use_module(listut).
+:- use_module(match_info).
+
+:-export(feature_combine_caller/0).
+
+feature_combine_caller:-
+	get_feature_list(List),
+	feature_combination_creator(List,List,_Z),
+	set_complex_list([]),
+	set_counter(0),
+	set_nd_complex_list([]).
+
+
 
 feature_combination_creator(Xs, Ys, Zs) :-
     (
@@ -12,28 +24,28 @@ feature_combination_creator(Xs, Ys, Zs) :-
 		make_argument_list(X,Xlist),
         (
             foreach(Y,Ys),
-            fromto(Zs4, Zs3, Zs2, Zs1),
+            fromto(Zs4, _Zs3, _Zs2, Zs1),
             param(X),
 			param(NameX),
 			param(ArrityX),
 			param(Xlist)
         do
            (functor(Y,NameY,ArrityY),make_argument_list(Y,Ylist),NameX == NameY,ArrityX == ArrityY,one_arg_diff(Xlist,Ylist,ArrityX) ->
-		   get_complex_list(K),append(K,[X - Y],L),set_complex_list(L) ; true)
+		   get_complex_list(K),append([X],[Y],L1),append(K,[L1],L),set_complex_list(L) ; true)
         )
     )
-	,get_complex_list(O),print_list(O).
+	,get_complex_list(O),get_feature_list(P),append(O,P,New_Feature_List),set_feature_list(New_Feature_List).
 	
 	
 delete_every_even(O):-	
 	length(O,G),
 	(param(O),for(J,1,G,2) do nth1(J,O,ElemO),get_nd_complex_list(U),append([ElemO],U,P),set_nd_complex_list(P)),
-	get_nd_complex_list(D).
+	get_nd_complex_list(_D).
 	
 
 one_arg_diff(X,Y,Arrity):-
 set_counter(0),
-(param(C),param(X),param(Y),for(I,1,Arrity) do
+(param(X),param(Y),for(I,1,Arrity) do
 	nth1(I,X,ElemX),nth1(I,Y,ElemY),pseudo_comparison(ElemX,ElemY),one_variable_check(ElemX,ElemY) -> incr; true),
 	get_counter(O),O =:= Arrity - 1.
 	
@@ -61,7 +73,7 @@ get_nd_complex_list(V) :- getval(nd_complex_list, V).
 
 pseudo_comparison(X,Y):-((X == Y) -> true ; var(X),var(Y) ; var(X),nonvar(Y) ; nonvar(X),var(Y)).
 one_variable_check(X,Y):-(var(X),nonvar(Y) -> true; nonvar(X),var(Y)),set_counter(9000).
-one_variable_check(X,Y):-true.
+one_variable_check(_X,_Y):-true.
 
 make_argument_list(Feature,Arg_List):-
 (foreacharg(X,Feature), foreach(X,Arg_List) do true).

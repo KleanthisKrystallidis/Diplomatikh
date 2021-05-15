@@ -40,13 +40,31 @@ evaluate(State,Eval):-
 		
 		
 calculate_value(Feature,State,Value):-
-	(
-	findall(Feature,true(Feature,State),List) ->
-		length(List,Value)
-	;
-		Value is 0
+	(headcutter(Feature,Tail,Head) ->
+		(
+		findall(Head,true(Head,State),List1) ->
+			length(List1,Value1)
+		;
+			Value1 is 0
+		),
+		(
+		findall(Tail,true(Tail,State),List2) ->
+			length(List2,Value2)
+		;
+			Value2 is 0
+		),
+		Value is Value1 - Value2
+	
+	
+	;	
+		(
+		findall(Feature,true(Feature,State),List) ->
+			length(List,Value)
+		;
+			Value is 0
+		)
 	)
-	.	
+	.
 			
 return_product(X,Y,Z):-
 	Z is X * Y.
@@ -54,6 +72,7 @@ return_product(X,Y,Z):-
 return_sum(X,Y,Z):-
 	Z is X + Y.
 		
-		
+headcutter([H|T],M,Score):-
+	H = Score, T = M.
 		
 		

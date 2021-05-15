@@ -9,6 +9,7 @@
 :- use_module(listut).
 :- use_module(term_combination_finder).
 
+
 :-mode add_to_feature_list(++).
 add_to_feature_list(Feature):-
 	get_feature_list(Features),
@@ -25,7 +26,9 @@ add_to_feature_list2(Feature):-
 	
 discription_feature_finder:-
 	base_pred(Features),
-	add_to_feature_list(Features).
+	add_to_feature_list(Features),
+	useless_feature_delete(Flist),
+	set_feature_list(Flist).
 
 term_manipulator:-
 	get_feature_list(Features),
@@ -54,6 +57,24 @@ make_argument_list(Feature,Arg_List):-
 
 viable_arg_list(Arg_List):-
 (foreach(X,Arg_List) do nonvar(X) -> true ; false).
+
+useless_feature_delete(Flist):-
+	get_feature_list(List),
+	set_feature_list2(List),
+	(
+	for(I,1,200) do
+		get_feature_list2(List),
+		(member(step(I),List) ->
+			delete2(step(I),List,List2),
+			set_feature_list2(List2)
+		;
+			true
+		)
+	),get_feature_list2(Flist),set_feature_list2([]).
+	
+delete2(A, [A|B], B).
+delete2(A, [B, C|D], [B|E]) :-
+    delete2(A, [C|D], E).
 
 :- local variable(feature_list2,[]).
 :- mode set_feature_list2(++).

@@ -23,6 +23,8 @@ make_stat_terms:-
 		set_countersv(0),
 		
 		functor(Feature_stat_term,featurestat,3),
+		
+
 		arg(1,Feature_stat_term,Feature),
 		
 		per_subsequence(Seq_List,Feature),
@@ -35,9 +37,7 @@ make_stat_terms:-
 		get_sumsc(SumSc),
 		return_mean(SumSc,Counter,MeanSc),    %find the mean of Score across all states
 		
-		get_expected_score(Expected_Score),
-		return_sum(MeanSc,Expected_Score,New_Expected_Score),  %change SumSc to MeanSc
-		set_expected_score(New_Expected_Score),
+		set_expected_score(MeanSc),
 		
 		per_subsequence2(Seq_List,Feature,MeanSc,MeanVal),
 		
@@ -236,11 +236,29 @@ increment(X,Y):-
 
 
 calculate_value(Feature,State,Value):-
-	(
-	findall(Feature,true(Feature,State),List) ->
-		length(List,Value)
-	;
-		Value is 0
+	(headcutter(Feature,Tail,Head) ->
+		(
+		findall(Head,true(Head,State),List1) ->
+			length(List1,Value1)
+		;
+			Value1 is 0
+		),
+		(
+		findall(Tail,true(Tail,State),List2) ->
+			length(List2,Value2)
+		;
+			Value2 is 0
+		),
+		Value is Value1 - Value2
+	
+	
+	;	
+		(
+		findall(Feature,true(Feature,State),List) ->
+			length(List,Value)
+		;
+			Value is 0
+		)
 	)
 	.
 	

@@ -105,6 +105,7 @@
 :- use_module(random_move).
 :- use_module(statistics_calculator).
 :- use_module(evaluation_function_creator).
+:- use_module(feature_combination).
 :- lib(timeout).
 %:-use_module(monte_carlo).
 
@@ -129,7 +130,7 @@ game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
 	% compute and save the initial state
 	initial_state(InitialState),
 	set_current_state(InitialState),
-	
+	create_evaluation(Role,InitialState),
 	% do something until the deadline
 	time_to_deadline(TimeToDeadline),
 	(TimeToDeadline>0 ->
@@ -150,6 +151,7 @@ game_start_timed_part(InitialState, Role) :-
 	log_printf("gameplayer.log","our role: %w, initial state: %w",[Role, InitialState]),
 	discription_feature_finder, 
 	term_manipulator,
+	feature_combine_caller,
 	usable_position_generator(Role,InitialState,100),
 	make_stat_terms,
 	get_feature_stat_term_list(List),
@@ -246,3 +248,16 @@ update_current_state(Moves, CurrentState) :-
 	),
 	logln("gameplayer.log", "=================================================="),
 	logln("gameplayer.log", last_moves(Moves)-new_state(CurrentState)).
+
+
+create_evaluation(Role,InitialState):-
+	discription_feature_finder, 
+	term_manipulator,
+	feature_combine_caller,
+	usable_position_generator(Role,InitialState,100),
+	make_stat_terms,
+	get_feature_stat_term_list(List),
+	sort(3,$>,List,Sorted_List),
+	keep_x_best(Sorted_List,30),
+	get_final_term_list(NList),
+	print_list(NList).

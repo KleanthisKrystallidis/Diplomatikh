@@ -18,7 +18,7 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 	param(Role),
 	param(State),
 	for(_I,1,Number_of_Sequences) do
-		make_random_moves(Role,State,50),
+		make_random_moves(Role,State,8),
 		set_subseq_list([]),
 		(terminal(State) ->
 		(	
