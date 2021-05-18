@@ -6,9 +6,11 @@
 :-use_module(game_description).
 
 :-export(keep_x_best/2).
+:-export(evaluate/2).
 
 
 keep_x_best(List,Number):-
+set_final_term_list([]),
 	(
 	param(List),
 	for(I,1,Number) do

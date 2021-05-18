@@ -24,7 +24,7 @@ monte_carlo_search(Role,State,Number_of_tries,Best_Score):-
 	param(Role),
 	param(State),
 	for(_I,1,Number_of_tries) do 
-		generate_random_actions(Role,State,Moves,Move),
+		generate_random_actions(Role,State,Moves,Move),    
 		set_current_state(State),
 		update_current_state2(Moves,NewState),
 		monte_carlo_payout(Role,NewState,Score_List),
@@ -197,8 +197,8 @@ update_current_state2(Moves, CurrentState) :-
 	get_current_state(LastState),
 	get_our_role(Role),
 	(Moves\=[] ->
-		does(Role, _OurMove, Moves), !,
-		state_update(LastState, Moves, CurrentState),
+		does(Role, _OurMove, Moves,C_Moves), !,
+		state_update(LastState, C_Moves, CurrentState),
 		set_current_state(CurrentState)
 	;
 		% this is the case for the first play-message (no prior moves)

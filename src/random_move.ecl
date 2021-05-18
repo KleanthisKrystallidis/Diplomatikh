@@ -9,7 +9,7 @@
 :-use_module(game_description).
 :-use_module(fd_prop_test_util).
 :- use_module(listut).
-:-use_module(monte_carlo).
+:-use_module(payout).
 
 
 
@@ -18,7 +18,8 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 	param(Role),
 	param(State),
 	for(_I,1,Number_of_Sequences) do
-		make_random_moves(Role,State,8),
+		random_int_between(1,9,Ran),
+		make_random_moves(Role,State,Ran),
 		set_subseq_list([]),
 		(terminal(State) ->
 		(	
@@ -31,11 +32,11 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 		)
 		;
 		(
-			random_int_between(2,5,K),    % number of states in subsequence
+			random_int_between(2,4,K),    % number of states in subsequence
 			(
 			param(Role),
 			for(_P,1,K) do
-				random_int_between(1,3,J),            %number of moves between kept states
+				random_int_between(1,2,J),            %number of moves between kept states
 				get_current_state(NewState),
 				get_subseq_list(Slist),
 				append([NewState],Slist,Sublist),
@@ -44,7 +45,7 @@ usable_position_generator(Role,State,Number_of_Sequences):- % K number of states
 			
 			),
 			get_current_state(NewState2),
-			monte_carlo_call(Role,NewState2,10,Score),
+			monte_carlo_call0(Role,NewState2,10,Score),
 			get_subseq_list(Sulist),
 			get_seq_list(Selist),
 			append([Score],Sulist,Subseqlist),
@@ -90,8 +91,8 @@ update_current_state2(Moves, CurrentState) :-
 	get_current_state(LastState),
 	get_our_role(Role),
 	(Moves\=[] ->
-		does(Role, _OurMove, Moves), !,
-		state_update(LastState, Moves, CurrentState),
+		does(Role, _OurMove, Moves,C_Moves), !,
+		state_update(LastState, C_Moves, CurrentState),
 		set_current_state(CurrentState)
 	;
 		% this is the case for the first play-message (no prior moves)

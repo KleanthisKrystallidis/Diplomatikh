@@ -106,6 +106,7 @@
 :- use_module(statistics_calculator).
 :- use_module(evaluation_function_creator).
 :- use_module(feature_combination).
+:- use_module(test).
 :- lib(timeout).
 %:-use_module(monte_carlo).
 
@@ -130,7 +131,6 @@ game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
 	% compute and save the initial state
 	initial_state(InitialState),
 	set_current_state(InitialState),
-	create_evaluation(Role,InitialState),
 	% do something until the deadline
 	time_to_deadline(TimeToDeadline),
 	(TimeToDeadline>0 ->
@@ -144,21 +144,14 @@ game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
 	),
 	!.
 game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime) :-
-	log_printf("gameplayer.log","error: %w failed!",[game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime)]).
+	log_printf("gameplayer.log","error: %w failed!",[game_start(MatchID, Role, Rules, StartClock, PlayClock, MsgReceiveTime)])
+	.
 
 :- mode game_start_timed_part(++, ++).
 game_start_timed_part(InitialState, Role) :-
 	log_printf("gameplayer.log","our role: %w, initial state: %w",[Role, InitialState]),
-	discription_feature_finder, 
-	term_manipulator,
-	feature_combine_caller,
-	usable_position_generator(Role,InitialState,100),
-	make_stat_terms,
-	get_feature_stat_term_list(List),
-	sort(3,$>,List,Sorted_List),
-	keep_x_best(Sorted_List,30),
-	get_final_term_list(NList),
-	print_list(NList),
+	create_evaluation(Role,InitialState)
+	
 	
 	% Here you should do things like:
 	% - analyzing the game
@@ -166,7 +159,8 @@ game_start_timed_part(InitialState, Role) :-
 	% - trying to solve the game
 	% This predicate here will be stopped automatically if the time runs out.
 	% Be sure to save everything you need later in some non-logical storage (e.g., variable/1, store/1, array/1)
-	logln("gameplayer.log","game_start_timed_part finished.").
+	%logln("gameplayer.log","game_start_timed_part finished.")
+	.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -203,7 +197,9 @@ game_play(MatchID, Moves, MsgReceiveTime, MoveString) :-
 
 :- mode game_play_timed_part(++, ++).
 game_play_timed_part(CurrentState, Role) :-
+	get_current_state(Return_State),
 	compute_best_move(CurrentState, Role),
+	set_current_state(Return_State),
 	logln("gameplayer.log","compute_best_move finished.").
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -234,7 +230,7 @@ update_current_state(Moves, CurrentState) :-
 	getval(submittedmove, SubmittedMove),
 	setval(submittedmove, []),
 	(Moves\=[] ->
-		does(Role, OurMove, Moves), !,
+		does(Role, OurMove, Moves,_), !,
 		(OurMove=SubmittedMove ->
 			true
 		;
@@ -248,9 +244,14 @@ update_current_state(Moves, CurrentState) :-
 	),
 	logln("gameplayer.log", "=================================================="),
 	logln("gameplayer.log", last_moves(Moves)-new_state(CurrentState)).
-
+/* 
+stupid:-
+setval(lol, [control(red), step(c29), cell(a, c1, b), cell(a, c2, b), cell(a, c3, b), cell(a, c4, bp), cell(a, c5, b), cell(a, c6, bp), cell(a, c7, b), cell(a, c8, bp), cell(b, c1, b), cell(b, c2, b), cell(b, c3, bp), cell(b, c4, b),cell(b, c5, b), cell(b, c6, b), cell(b, c7, bp), cell(b, c8, b), cell(c, c1, b), cell(c, c2, b), cell(c, c3, b), cell(c, c4, b), cell(c, c5, b), cell(c, c6, b), cell(c, c7, b), cell(c, c8, bp), cell(d, c2, b), cell(d, c3, bp), cell(d, c4, b), cell(d, c5, b), cell(d, c6, b), cell(d, c7, b), cell(d, c8, b), cell(e, c1, b), cell(e, c2, bp), cell(e, c3, b), cell(e, c4, bp), cell(e, c5, b), cell(e, c6, b), cell(e, c7, b), cell(f, c1, b), cell(f, c2, b), cell(f, c3, wp), cell(f, c4, b), cell(f, c5, bp), cell(f, c6, b), cell(f, c7, b), cell(f, c8, b), cell(g, c1, b), cell(g, c2, b), cell(g, c3, b), cell(g, c4, b), cell(g, c5, b), cell(g, c6, b), cell(g, c7, b), cell(g, c8, bp), cell(h, c1, b), cell(h, c2, b), cell(h, c3, b), cell(h, c4, b), cell(h, c5, b), cell(h, c6, b), cell(h, c7, b), cell(h, c8, b)]),
+terminal(lol). */
+	
 
 create_evaluation(Role,InitialState):-
+	set_final_term_list([]),
 	discription_feature_finder, 
 	term_manipulator,
 	feature_combine_caller,
@@ -260,4 +261,9 @@ create_evaluation(Role,InitialState):-
 	sort(3,$>,List,Sorted_List),
 	keep_x_best(Sorted_List,30),
 	get_final_term_list(NList),
-	print_list(NList).
+	print_list(NList),
+	set_feature_list([]),
+	set_current_state(InitialState),
+	opponent_role(Role,HisRole),
+	set_ene_role(HisRole).
+	

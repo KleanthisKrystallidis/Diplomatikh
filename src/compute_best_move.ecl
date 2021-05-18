@@ -40,6 +40,7 @@
 
 :- use_module(game_description).
 :- use_module(match_info).
+:- use_module(test).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -47,5 +48,12 @@ compute_best_move(CurrentState, Role) :-
 	% first compute a legal move, so in case time runs out we can at least play legally
 	legal(Role, LegalMove, CurrentState), !,
 	set_current_best_move(LegalMove),
+	
+	alpha_beta(Role,2,CurrentState,-200,200,Move,_),
+	headcutter(Move,Best_Move),
+	set_current_best_move(Best_Move),
 	% TODO: now search for the best move (call set_current_best_move/1 whenever you found a better move)
 	true.
+
+headcutter([H|_],M):-
+	H = M.

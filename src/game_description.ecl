@@ -30,7 +30,7 @@
 	next/3,
 	init/1,
 	role/1,
-	does/3,
+	does/4,
 	true/2,
 	base/1,
 
@@ -59,6 +59,7 @@
 
 :- use_module(gdl_parser).
 :- use_module(match_info).
+:- use_module(listut).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -114,7 +115,8 @@ sort_clauses(List1, List2) :-
 
 d_true(Fluent) :-
 	getval(state, State),
-	member(Fluent, State).
+	member(Fluent, State)
+	.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -190,10 +192,32 @@ init(Fluent) :-
 role(Role) :-
 	d_role(Role).
 
-:- mode does(?, ?, ++).
-does(Role, Move, Moves) :-
-	roles(Roles),
+:- mode does(?, ?, ++, ++).
+does(Role, Move, Moves, Moves) :-
+	headcutter(Moves,M,T),
+	get_current_state(State),
+	legal(Role,M,State),
+	opponent_role(Role,OpRole),
+	headcutter(T,EM),
+	legal(OpRole,EM,State),
+	append([Role],[OpRole],Roles),
 	d_does1(Role, Move, Roles, Moves).
+
+does(Role, Move, [H|T],C_Moves) :-
+	append(T,[H],C_Moves),
+	headcutter(T,M),
+	get_current_state(State),
+	legal(Role,M,State),
+	opponent_role(Role,OpRole),
+	legal(OpRole,H,State),
+	append([Role],[OpRole],Roles),
+	d_does1(Role, Move, Roles, C_Moves).
+
+headcutter([H|_T],M):-
+	M = H.
+
+headcutter([H|T],M,T):-
+	M = H.	
 
 :- mode true(?, ++).
 true(Fluent, State) :-
@@ -276,3 +300,19 @@ state_update(OldState, Moves, NewState) :-
 	setval(moves, Moves),
 	findall(Fluent, d_next(Fluent), NewState1),
 	sort(NewState1, NewState).
+	
+opponent_role(OurRole,OpRole):-
+roles(Roles),
+length(Roles,Len),
+(
+param(OpRole),
+param(OurRole),
+param(Roles),
+	for(I,1,Len) do 
+	nth1(I,Roles,PoRole),
+	(OurRole \= PoRole ->
+		OpRole = PoRole
+	;
+	true
+	)
+).	

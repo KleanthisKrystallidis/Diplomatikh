@@ -63,6 +63,9 @@
 	set_sumsv/1,
 	get_sumsv/1,
 	
+	set_score_sum/1,
+	get_score_sum/1,
+	
 	set_sum_val_score_prod/1,
 	get_sum_val_score_prod/1,
 	
@@ -111,6 +114,9 @@
 	set_current_best_move/1,
 	get_current_best_move/1,
 	
+	set_ene_role/1,
+	get_ene_role/1,
+	
 	set_feature_list/1,
 	get_feature_list/1
 	], eclipse_language).
@@ -126,6 +132,12 @@ get_match_id(V) :- getval(currentmatch, V).
 :- mode set_our_role(++).
 set_our_role(V) :- setval(our_role, V).
 get_our_role(V) :- getval(our_role, V).
+
+:- local variable(ene_role, none).
+:- mode set_ene_role(++).
+set_ene_role(V) :- setval(ene_role, V).
+get_ene_role(V) :- getval(ene_role, V).
+
 
 :- local variable(startclock, 0).
 :- mode set_startclock(++).
@@ -278,3 +290,8 @@ get_final_term_list(V) :- getval(final_term_list, V).
 :- mode set_eval(++).
 set_eval(V) :- setval(eval, V).
 get_eval(V) :- getval(eval, V).
+
+:- local variable(score_sum, 0).
+:- mode set_score_sum(++).
+set_score_sum(V) :- setval(score_sum, V).
+get_score_sum(V) :- getval(score_sum, V).

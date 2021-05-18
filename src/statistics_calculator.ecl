@@ -6,6 +6,9 @@
 
 :-export(make_stat_terms/0).
 
+spying(_Feature):-
+	true.
+
 % featurestat(feature_name,subsequneceID,state,value_of_feature,Subsequence_score)
 make_stat_terms:-
 	get_feature_list(Feature_List),
@@ -22,6 +25,7 @@ make_stat_terms:-
 		set_sumsv(0),
 		set_countersv(0),
 		
+		spying(Feature),
 		functor(Feature_stat_term,featurestat,3),
 		
 
@@ -244,7 +248,8 @@ calculate_value(Feature,State,Value):-
 			Value1 is 0
 		),
 		(
-		findall(Tail,true(Tail,State),List2) ->
+		headcutter(Tail,_,Head2),
+		findall(Head2,true(Head2,State),List2) ->
 			length(List2,Value2)
 		;
 			Value2 is 0
