@@ -1,7 +1,7 @@
 :- module(random_move).
 
 
-:-export(usable_position_generator/3).
+:-export(usable_position_generator/4).
 :-export(opponent_role/2).
 :-export(update_current_state2/2).
 
@@ -13,12 +13,13 @@
 
 
 
-usable_position_generator(Role,State,Number_of_Sequences):- % K number of states in sequence,J distance between them
+usable_position_generator(Role,State,Number_of_Sequences,Depth):- % K number of states in sequence,J distance between them
 	(
+	param(Depth),
 	param(Role),
 	param(State),
 	for(_I,1,Number_of_Sequences) do
-		random_int_between(1,9,Ran),
+		random_int_between(1,Depth,Ran),
 		make_random_moves(Role,State,Ran),
 		set_subseq_list([]),
 		(terminal(State) ->
@@ -115,4 +116,5 @@ param(Roles),
 	)
 ).
 	
+
 

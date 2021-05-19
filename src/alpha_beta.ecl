@@ -1,4 +1,4 @@
-:-module(test).
+:-module(alpha_beta).
 
 :-use_module(evaluation_function_creator).
 :-use_module(listut).

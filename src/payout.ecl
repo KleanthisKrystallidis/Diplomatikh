@@ -6,6 +6,9 @@
 :-use_module(match_info).
 
 :-export(monte_carlo_call0/4).
+:-export(opponent_role/2).
+:-export(update_current_state2/2).
+
 
 monte_carlo_call0(Role,State,Number_of_tries,Best_Score):-
 	(terminal(State) ->	

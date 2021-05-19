@@ -40,7 +40,7 @@
 
 :- use_module(game_description).
 :- use_module(match_info).
-:- use_module(test).
+:- use_module(alpha_beta).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

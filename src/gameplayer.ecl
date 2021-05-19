@@ -106,7 +106,8 @@
 :- use_module(statistics_calculator).
 :- use_module(evaluation_function_creator).
 :- use_module(feature_combination).
-:- use_module(test).
+:- use_module(alpha_beta).
+:- use_module(depth_finder).
 :- lib(timeout).
 %:-use_module(monte_carlo).
 
@@ -244,10 +245,7 @@ update_current_state(Moves, CurrentState) :-
 	),
 	logln("gameplayer.log", "=================================================="),
 	logln("gameplayer.log", last_moves(Moves)-new_state(CurrentState)).
-/* 
-stupid:-
-setval(lol, [control(red), step(c29), cell(a, c1, b), cell(a, c2, b), cell(a, c3, b), cell(a, c4, bp), cell(a, c5, b), cell(a, c6, bp), cell(a, c7, b), cell(a, c8, bp), cell(b, c1, b), cell(b, c2, b), cell(b, c3, bp), cell(b, c4, b),cell(b, c5, b), cell(b, c6, b), cell(b, c7, bp), cell(b, c8, b), cell(c, c1, b), cell(c, c2, b), cell(c, c3, b), cell(c, c4, b), cell(c, c5, b), cell(c, c6, b), cell(c, c7, b), cell(c, c8, bp), cell(d, c2, b), cell(d, c3, bp), cell(d, c4, b), cell(d, c5, b), cell(d, c6, b), cell(d, c7, b), cell(d, c8, b), cell(e, c1, b), cell(e, c2, bp), cell(e, c3, b), cell(e, c4, bp), cell(e, c5, b), cell(e, c6, b), cell(e, c7, b), cell(f, c1, b), cell(f, c2, b), cell(f, c3, wp), cell(f, c4, b), cell(f, c5, bp), cell(f, c6, b), cell(f, c7, b), cell(f, c8, b), cell(g, c1, b), cell(g, c2, b), cell(g, c3, b), cell(g, c4, b), cell(g, c5, b), cell(g, c6, b), cell(g, c7, b), cell(g, c8, bp), cell(h, c1, b), cell(h, c2, b), cell(h, c3, b), cell(h, c4, b), cell(h, c5, b), cell(h, c6, b), cell(h, c7, b), cell(h, c8, b)]),
-terminal(lol). */
+
 	
 
 create_evaluation(Role,InitialState):-
@@ -255,7 +253,8 @@ create_evaluation(Role,InitialState):-
 	discription_feature_finder, 
 	term_manipulator,
 	feature_combine_caller,
-	usable_position_generator(Role,InitialState,100),
+	find_depth(Role,InitialState,Depth),
+	usable_position_generator(Role,InitialState,100,Depth),
 	make_stat_terms,
 	get_feature_stat_term_list(List),
 	sort(3,$>,List,Sorted_List),
