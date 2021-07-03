@@ -1,6 +1,0 @@
-1608741196113 : our role: oplayer, initial state: [control(xplayer), cell(1, 1, b), cell(1, 2, b), cell(1, 3, b), cell(2, 1, b), cell(2, 2, b), cell(2, 3, b), cell(3, 1, b), cell(3, 2, b), cell(3, 3, b)]
-1608741196113:game_start_timed_part finished.
-1608741291972: ==================================================
-1608741305106:last_moves([])-new_state([control(xplayer),cell(1,1,b),cell(1,2,b),cell(1,3,b),cell(2,1,b),cell(2,2,b),cell(2,3,b),cell(3,1,b),cell(3,2,b),cell(3,3,b)])
-1608741342625:time is up ...
-1608741355790:best_move([])

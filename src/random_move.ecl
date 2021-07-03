@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :- module(random_move).
 
 

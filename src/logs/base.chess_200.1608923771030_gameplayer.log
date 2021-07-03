@@ -1,2 +1,0 @@
-1608928484807 : our role: black, initial state: [control(white), step(1), cell(a, 1, white, rook), cell(a, 2, white, pawn), cell(a, 7, black, pawn), cell(a, 8, black, rook), cell(b, 1, white, knight), cell(b, 2, white, pawn), cell(b, 7, black, pawn), cell(b, 8, black, knight), cell(c, 1, white, bishop), cell(c, 2, white, pawn), cell(c, 7, black, pawn), cell(c, 8, black, bishop), cell(d, 1, white, queen), cell(d, 2, white, pawn), cell(d, 7, black, pawn), cell(d, 8, black, queen), cell(...), ...]
-1608928484807:game_start_timed_part finished.

@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :- module(evaluation).
 
 :-export(add_to_feature_list/1).

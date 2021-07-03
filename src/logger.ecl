@@ -75,7 +75,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- local variable(log_dir, "logs").
+:- local variable(log_dir, "E:/Users/Kleanthis/Sxolh/Diplomatikh/prolog_starter_code/prolog_starter_code/src/logs").
 :- local variable(log_prefix, "default").
 :- local store(logs).
 

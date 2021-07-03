@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :-module(depth_finder).
 
 

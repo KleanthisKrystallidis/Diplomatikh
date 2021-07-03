@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :-module(evaluation_function_creator).
 
 

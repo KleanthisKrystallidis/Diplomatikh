@@ -259,29 +259,17 @@ initial_state(State) :-
 	findall(Fluent, d_init(Fluent), State1),
 	sort(State1, State).
 	
-base_pred(Features):- % adds all the terms found in d_base,d_init,d_next in the Feature list and makes a list of their tail
+base_pred(Features):- % adds all the terms found in d_base,d_init,d_next in the Feature list and makes a list of their tail *kleanthis
 	findall(Feature0,d_base(Feature0),Features0),
 	findall(Feature1,d_next(Feature1),Features1),
-	/*findall(Feature2,d_legal(Feature2),Features2),*/
 	findall(Feature3,d_true(Feature3),Features3),
-	/* findall(Feature4,d_goal(Feature4),Features4), */
 	findall(Feature5,d_role(Feature5),Features5),
 	findall(Feature6,d_init(Feature6),Features6),
 	append(Features0,Features1,Features01),
 	append(Features3,Features5,Features35),
 	append(Features6,Features01,Features601),
 	append(Features601,Features35,Features).
-	/* get_rules(Rules),
-	(foreach(Rule,Rules),fromto(Features,Out,In,[]) do			spy game_description:base_pred main:start_game_player
-		(Rule=(Head:-Tail) -> Out=[Head|In]; Out=In)), */
-	/* get_rules(Rules),
-	(foreach(Rule,Rules),fromto(Features,Out,In,[]),fromto(Tails,Out2,In2,[]) do			
-		(Rule=(Head:-Tail) -> Out2=[Tail|In2] ; Rule=Head, Tail=true,Out2 = In2)),
- 	(foreach(Tail,Tails),fromto(Terms,Terms2,In3,[]) do
-		Tail=..List1,
-		(fromeach(Term2,List1),fromto(Terms2,Out3,In4,In3) do
-			Out3=[Term2|In3])),
-	print_list(Terms). */
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 term_extractor(d_next(Goal),Term):-
@@ -301,6 +289,7 @@ state_update(OldState, Moves, NewState) :-
 	findall(Fluent, d_next(Fluent), NewState1),
 	sort(NewState1, NewState).
 	
+% ability to find opponent_role *Kleanthis Krystallidis
 opponent_role(OurRole,OpRole):-
 roles(Roles),
 length(Roles,Len),

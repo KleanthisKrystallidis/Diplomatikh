@@ -41,6 +41,7 @@
 :- use_module(game_description).
 :- use_module(match_info).
 :- use_module(alpha_beta).
+:- use_module(monte_carlo).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -48,9 +49,16 @@ compute_best_move(CurrentState, Role) :-
 	% first compute a legal move, so in case time runs out we can at least play legally
 	legal(Role, LegalMove, CurrentState), !,
 	set_current_best_move(LegalMove),
+	get_carrier(Carr),
 	
-	alpha_beta(Role,2,CurrentState,-200,200,Move,_),
-	headcutter(Move,Best_Move),
+	% Uses alpha_beta with the evaluation function to find the best move *Kleanthis Krystallidis
+	%(Carr == 0 ->
+		alpha_beta(Role,2,CurrentState,-200,200,Move,_),
+		headcutter(Move,Best_Move),
+	%;
+	%	monte_carlo_call(Role,CurrentState,20,Best_Move)
+		%headcutter(Move,Best_Move)
+	%),
 	set_current_best_move(Best_Move),
 	% TODO: now search for the best move (call set_current_best_move/1 whenever you found a better move)
 	true.

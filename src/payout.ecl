@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :-module(payout).
 
 :-use_module(fd_prop_test_util).
@@ -16,7 +18,6 @@ monte_carlo_call0(Role,State,Number_of_tries,Best_Score):-
 	;
 		set_move_id_list([]),
 		set_scores([]),
-		/* monte_carlo_search(Role,State,Number_of_tries,Best_Score) */
 		(
 		param(State),
 		param(Role),

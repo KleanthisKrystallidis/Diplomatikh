@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :- module(feature_combination).
 
 :-use_module(listut).

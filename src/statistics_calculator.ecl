@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :-module(statistics_calculator).
 
 :-use_module(game_description).
@@ -9,7 +11,7 @@
 spying(_Feature):-
 	true.
 
-% featurestat(feature_name,subsequneceID,state,value_of_feature,Subsequence_score)
+% featurestat(feature_name,value_of_feature,Subsequence_score)
 make_stat_terms:-
 	get_feature_list(Feature_List),
 	get_seq_list(Seq_List),

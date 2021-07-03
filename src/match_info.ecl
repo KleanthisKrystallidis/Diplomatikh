@@ -117,11 +117,29 @@
 	set_ene_role/1,
 	get_ene_role/1,
 	
+	set_agent_name/1,
+	get_agent_name/1,
+	
+	set_carrier/1,
+	get_carrier/1,
+	
 	set_feature_list/1,
 	get_feature_list/1
 	], eclipse_language).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Made a lot of variables that did not exist *Kleanthis Krystallidis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+:- local variable(agent_name, my_agent).
+:- mode set_agent_name(++).
+set_agent_name(V) :- setval(agent_name, V).
+get_agent_name(V) :- getval(agent_name, V).
+
+:- local variable(carrier, 0).
+:- mode set_carrier(++).
+set_carrier(V) :- setval(carrier, V).
+get_carrier(V) :- getval(carrier, V).
 
 :- local variable(currentmatch, "none").
 :- mode set_match_id(++).

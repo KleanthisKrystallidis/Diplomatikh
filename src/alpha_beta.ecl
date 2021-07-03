@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :-module(alpha_beta).
 
 :-use_module(evaluation_function_creator).

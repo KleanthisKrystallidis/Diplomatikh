@@ -28,13 +28,15 @@
 :- use_module(logger).
 :- use_module(gameplayer).
 :- use_module(time_sync).
+:- use_module(match_info).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 :- mode handle_message(++, ++, -).
 handle_message(MessageString, _ReceiveTime, Reply) :- % Recieve time has changed to _ReceiveTime
 	(MessageString == "( INFO )"-> true ; writeln("error parsing message1!"), fail),
-	Reply="available". 
+	get_agent_name(Name),atom_string(Name,Sname),concat_strings("((name ",Sname,Half_String),concat_strings(Half_String,") (status available))",String),
+	Reply= String. 
 handle_message(MessageString, ReceiveTime, Reply) :-
 	(parse_gdl_message_string(MessageString, Message) -> true ; writeln("error parsing message!"), fail),writeln(ReceiveTime),
 	handle_message_switch(Message, MessageString, ReceiveTime, Reply).
@@ -52,13 +54,13 @@ handle_message_switch(play(MatchID, Moves), MessageString, ReceiveTime, Reply) :
 	external_time_to_local(ReceiveTime, LocalReceiveTime),
 	game_play(MatchID, Moves, LocalReceiveTime, Reply).
 
-
+%added shutdown sequence when stop is called *Kleanthis Krystallidis
 handle_message_switch(stop(MatchID, Moves), MessageString, ReceiveTime, Reply) :- !,
 	logln("messages.txt", MessageString),
 	external_time_to_local(ReceiveTime, LocalReceiveTime),
 	game_stop(MatchID, Moves, LocalReceiveTime),
 	closelogs,
-	Reply="DONE".
+	Reply="DONE",exit_block(int).
 
 handle_message_switch(kill(immediately), _MessageString, _ReceiveTime, _Reply) :- !,
 	exit_block(int).

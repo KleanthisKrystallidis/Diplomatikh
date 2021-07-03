@@ -1,9 +1,12 @@
+%*Kleanthis Krystallidis
+
 :- module(monte_carlo).
 
 :-use_module(fd_prop_test_util).
 :-use_module(game_description).
 :-use_module(listut).
 :-use_module(match_info).
+:-use_module(evaluation_function_creator).
 
 :-export(monte_carlo_call/4).
 
@@ -100,7 +103,7 @@ score_check(Sc,MoveId,Score,Times):-
 		false
 	).
 
-compute_move(Best_Qa):-
+compute_move(Move):-
 		get_move_id_list(MoveId_List),
 		get_scores(Score_terms),
 		(
@@ -113,7 +116,7 @@ compute_move(Best_Qa):-
 					score_check(IndScore,MoveId,Score,Times) ->
 					(
 						compute_qa(Score,Times,Qa),
-						get_maxi(Maximum),									%Improve by taking into account the times if all else is equal
+						get_maxi(Maximum),									
 							(
 							( Qa > Maximum )->
 								set_maxi(Qa),
@@ -129,8 +132,8 @@ compute_move(Best_Qa):-
 				)
 			)
 		),
-		get_maxi(Best_Qa)
-		%,headcutter(Moveid,Move)
+		get_idmaxi(MoveId)
+		,headcutter(MoveId,Move)
 		.
 			
 			
@@ -150,17 +153,28 @@ headcutter([H|_],M):-
 
 
 monte_carlo_payout(Role,State,Score_List):-
-	(terminal(State) ->
+	random_int_between(1,100,I),
+	(I == 1 ->
 		opponent_role(Role,OpRole),
-		goal(Role, MyValue, State),
-		goal(OpRole, OpValue, State),
+		evaluate(State,MyValue),
+		(OpValue is 100 - MyValue),
 		append([Role],[MyValue],Myscore),
 		append([OpRole],[OpValue],Opscore),
 		append(Myscore,Opscore,Score_List)
+		
 	;
-		generate_random_actions(Role,State,Moves,_),
-		update_current_state2(Moves,NewState),
-		monte_carlo_payout(Role,NewState,Score_List)
+		(terminal(State) ->
+			opponent_role(Role,OpRole),
+			goal(Role, MyValue, State),
+			goal(OpRole, OpValue, State),
+			append([Role],[MyValue],Myscore),
+			append([OpRole],[OpValue],Opscore),
+			append(Myscore,Opscore,Score_List)
+		;
+			generate_random_actions(Role,State,Moves,_),
+			update_current_state2(Moves,NewState),
+			monte_carlo_payout(Role,NewState,Score_List)
+		)
 	).
 	
 opponent_role(OurRole,OpRole):-

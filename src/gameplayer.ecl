@@ -247,7 +247,7 @@ update_current_state(Moves, CurrentState) :-
 	logln("gameplayer.log", last_moves(Moves)-new_state(CurrentState)).
 
 	
-
+% This is the heart of generating the evaluation function *Kleanthis Krystallidis
 create_evaluation(Role,InitialState):-
 	set_final_term_list([]),
 	discription_feature_finder, 

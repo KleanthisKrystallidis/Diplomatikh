@@ -19,24 +19,24 @@
 
 :- module(main, [
 	start_game_player/0,
-	start_game_player/1
+	start_game_player/3
 	], eclipse_language).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 :- comment(summary, "contains the main routine to setup the game player").
-:- comment(start_game_player/1, [
+:- comment(start_game_player/3, [
 	summary: "starts the game player on the given port",
 	args: [
 		"Port": "the port to listen on"
 		],
-	amode: start_game_player(++),
+	amode: start_game_player(++,++,++),
 	resat: no,
 	fail_if: "None. Always succeed.",
 	see_also: [start_game_player/0]
 	]).
 :- comment(start_game_player/0, [
 	summary: "short for start_game_player(8000)",
-	see_also: [start_game_player/1]
+	see_also: [start_game_player/3]
 	]).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,15 +44,23 @@
 :- use_module(http_server).
 :- use_module(http_method).
 :- use_module(logger).
+:- use_module(match_info).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 :- local variable(int_handler).
 
+
+% Changed the start_game_player function so the user can choose a name for the agent *Kleanthis Krystallidis
 start_game_player :-
-	start_game_player(8000).
+	get_carrier(Carr),
+	get_agent_name(Name),
+	start_game_player(Name,8000,Carr).
 	
-:- mode start_game_player(++).
-start_game_player(Port) :-
+	
+:- mode start_game_player(++,++,++).
+start_game_player(Name,Port,Carr) :-
+	set_agent_name(Name),
+	%set_carrier(Carr),
 	(get_flag(hostarch, "i386_linux") ->
 		save_interrupt_handler,
 		set_interrupt_handler(int, control_c_handler/0)

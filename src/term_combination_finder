@@ -1,3 +1,5 @@
+%*Kleanthis Krystallidis
+
 :- module(term_combination_finder).
 
 :-export(combination_finder/6).
